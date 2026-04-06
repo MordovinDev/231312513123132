@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic DM HUD</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Rubik:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hud">
+
+        <div class="server-hud panel">
+            <div class="server-header">
+                <div class="server-title">
+                    <span class="project-dynamic">Dynamic</span>
+                    <span class="project-dm">DM</span>
+                    <span class="project-sub">(ОБТ)</span>
+                </div>
+            </div>
+
+            <div class="server-divider"></div>
+
+            <div class="server-stats">
+                <div class="server-stat">
+                    <div class="server-label">ID</div>
+                    <div class="server-value" id="playerId">117</div>
+                </div>
+
+                <div class="server-stat">
+                    <div class="server-label">Static</div>
+                    <div class="server-value" id="static">3820</div>
+                </div>
+
+                <div class="server-stat online">
+                    <div class="server-label">Онлайн</div>
+                    <div class="server-value" id="playerCount">191</div>
+                </div>
+
+                <div class="server-stat time-stat">
+                    <div class="server-label">Время</div>
+                    <div class="server-value">
+                        <span id="moscowTime">13:41</span>, <span id="moscowDate">20.11.2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="reward-card panel">
+                <div class="reward-icon">
+                    <img src="images/froggercase.png" alt="case" onerror="this.style.display='none'">
+                </div>
+                <div class="reward-content">
+                    <div class="reward-title">Бесплатный кейс</div>
+                    <div class="reward-time" id="FreeCaseTime">15 мин</div>
+                </div>
+            </div>
+
+            <div class="reward-card panel">
+                <div class="reward-icon">
+                    <img src="images/caddy.png" alt="car" onerror="this.style.display='none'">
+                </div>
+                <div class="reward-content">
+                    <div class="reward-title">Бесплатный автомобиль</div>
+                    <div class="reward-time" id="AutoCaseTime">50 часов</div>
+                </div>
+            </div>
+
+            <div class="donate-panel">
+                <span>X2 DONATE</span>
+            </div>
+        </div>
+
+        <div class="left-column">
+            <div class="action-item">
+                <div class="key-btn">F3</div>
+                <div class="action-label panel">Главное меню</div>
+            </div>
+
+            <div class="action-item">
+                <div class="key-btn">F2</div>
+                <div class="action-label panel">Курсор</div>
+            </div>
+
+            <div class="action-item">
+                <div class="key-btn">I</div>
+                <div class="action-label panel">Инвентарь</div>
+            </div>
+
+            <div class="action-item">
+                <div class="key-btn">↑</div>
+                <div class="action-label panel">Телефон</div>
+            </div>
+
+            <div class="action-item">
+                <div class="key-btn">N</div>
+                <div class="action-label panel">Голосовой чат</div>
+            </div>
+
+            <div class="action-item">
+                <div class="key-btn">F7</div>
+                <div class="action-label panel">Обновить voice</div>
+            </div>
+        </div>
+
+        <div class="bottom-left">
+            <div class="voice-square panel">
+                <img src="images/voice.png" alt="voice" onerror="this.parentNode.innerHTML='🎤'">
+            </div>
+
+            <div class="money-panel panel">
+                <div class="money-icon">
+                    <img src="images/money.png" alt="money" onerror="this.parentNode.innerHTML='💵'">
+                </div>
+                <div class="money-value" id="money">$100,000</div>
+            </div>
+        </div>
+
+        <div class="weapon-panel panel">
+            <div class="ammo-row">
+                <img src="images/Bullets.png" alt="ammo" class="ammo-img" onerror="this.style.display='none'">
+                <div class="ammo-count" id="ammoCount">0 / 0</div>
+            </div>
+
+            <div class="slots-row">
+                <div class="slot active">
+                    <img src="images/weapon.png" alt="weapon" onerror="this.style.display='none'">
+                    <span>1</span>
+                </div>
+                <div class="slot"><span>2</span></div>
+                <div class="slot"><span>3</span></div>
+                <div class="slot"><span>4</span></div>
+                <div class="slot"><span>5</span></div>
+            </div>
+        </div>
+
+        <div class="kd-panel panel">
+            <div class="kd-item">
+                <div class="kd-icon">
+                    <img src="images/kill.p.png" alt="kill" onerror="this.parentNode.innerHTML='K'">
+                </div>
+                <div class="kd-value" id="kill">0</div>
+            </div>
+
+            <div class="kd-separator"></div>
+
+            <div class="kd-item">
+                <div class="kd-icon">
+                    <img src="images/death.pnf.png" alt="death" onerror="this.parentNode.innerHTML='D'">
+                </div>
+                <div class="kd-value" id="death">0</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function formatMoney(value) {
+            return "$" + Number(value).toLocaleString("en-US");
+        }
+
+        window.changeMainInfo = function(staticId, name, money, FreeCaseTime, AutoCaseTime, kill, death) {
+            document.getElementById("static").innerHTML = staticId;
+            document.getElementById("money").innerHTML = formatMoney(money);
+            document.getElementById("FreeCaseTime").innerHTML = FreeCaseTime + " мин";
+            document.getElementById("AutoCaseTime").innerHTML = AutoCaseTime + " часов";
+            document.getElementById("kill").innerHTML = kill;
+            document.getElementById("death").innerHTML = death;
+        };
+
+        window.changePlayerCount = function(count) {
+            document.getElementById("playerCount").innerHTML = count;
+        };
+
+        window.changeAmmoCount = function(actual, all) {
+            document.getElementById("ammoCount").innerHTML = actual + " / " + all;
+        };
+
+        function updateMoscowTime() {
+            const now = new Date();
+
+            const time = new Intl.DateTimeFormat("ru-RU", {
+                timeZone: "Europe/Moscow",
+                hour: "2-digit",
+                minute: "2-digit",
+                hour12: false
+            }).format(now);
+
+            const date = new Intl.DateTimeFormat("ru-RU", {
+                timeZone: "Europe/Moscow",
+                day: "2-digit",
+                month: "2-digit",
+                year: "numeric"
+            }).format(now);
+
+            document.getElementById("moscowTime").innerText = time;
+            document.getElementById("moscowDate").innerText = date;
+        }
+
+        updateMoscowTime();
+        setInterval(updateMoscowTime, 1000);
+
+        document.getElementById("money").innerHTML = formatMoney(100000);
+    </script>
+</body>
+</html>

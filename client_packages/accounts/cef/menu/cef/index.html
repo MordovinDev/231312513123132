@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Family System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img class="close" src="./img/close.svg" alt="">
+    <div class="block_tittle">
+        <div class="tittle_block">
+            <h1>
+                <font color="AD00FF">МЕНЮ <br></font>СЕМЬИ
+            </h1>
+            <span></span>
+            <h2 id="fam_name">Test #333</h2>
+        </div>
+        <div class="block_info_online">
+            <div class="online_block">
+                <img src="./img/offline.svg" alt="">
+                <div class="online_wrapper">
+                    <h1>В СЕТИ</h1>
+                    <h2 id="famOnline">30 ИГРОКОВ</h2>
+                </div>
+            </div>
+            <div class="totalplayers_block">
+                <img src="./img/total.svg" alt="">
+                <div class="total_wrapper">
+                    <h1>ВСЕГО УЧАСТНИКОВ</h1>
+                    <h2 id="famPlayers">52 ИГРОКОВ</h2>
+                </div>
+            </div>
+        </div>
+        <div class="block_main">
+            <div class="buttons_top">
+                <button id="settings">Настройки</button>
+                <button id="main" onclick="toMain()">Главная</button>
+                <button id="properties" onclick="toProperties()">Имущество</button>
+            </div>
+            <div class="line"></div>
+            <div class="player_edit">
+                <div class="player_edit_wrapper">
+                    <h1 id="edit_tittle">Редактировать playerName</h1>
+                    <button id="give_dep_lead">Deputy Leader</button><br>
+                    <button id="give_fw">Доступ к войне семей</button><br>
+                    <button id="give_zero">Нулевой ранг (почти никаких возможностей)</button><br>
+                    <button onclick="closeUpRank()" id="give_fw">Закрыть</button>
+                </div>
+            </div>
+            <div class="players_tittle">СПИСОК УЧАСТНИКОВ</div>
+            <div class="players_list_block">
+                <div class="players_list_wrap">
+                    <div class="players_list">
+
+                    </div>
+                </div>
+            </div>
+            <div class="property">
+                <div class="money_reputation">
+                    <p class="money">Счет семьи: 1 000 000 $ <img src="./img/add.svg" alt="" class="money_add"><img
+                            src="./img/remove.svg" alt="" class="money_remove"></p>
+                    <p class="reputation">Рейтинг: 100</p>
+                </div>
+                <div class="players_tittle">АВТО ПАРК</div>
+                <div class="veh_block">
+                </div>
+            </div>
+            <script src="./index.js"></script>
+</body>
+
+</html>

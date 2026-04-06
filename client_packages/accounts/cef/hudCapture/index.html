@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/rubik-glitch" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+        <div class="osnova">
+            <div class="bluebacground"><p id="blue">Игроков: 0</p></div>
+            <div class="redbackground"><p id="red">Игроков: 0</p></div>
+            <div class="vs">vs</div>
+            <div class="timer" id="timer" id="timertext">До конца капта: 200 сек</div></div>
+            <div class="backzapiv">
+                <p id="zapiv">Сужение зоны:</p>
+                <div class="green-bar"></div>
+            </div>
+            <div class="backstatistics">
+                <div class="lastbackstatistics"></div>
+                <p id="textcapt">capture statistics</p>
+                <p id="kill">kill: 0</p>
+                <p id="kd">k.d: 0</p>
+                <p id="properety">properety: 0</p>
+                <p id="rev">оружие - "1" (клавиша)</p>
+            </div>
+</body>
+<style>
+      .green-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: rgb(2, 165, 2);
+    animation: move 25s linear infinite;
+  }
+
+  @keyframes move {
+    0% { width: 0%; }
+    100% { width: 100%; }
+  }
+.osnova, .bluebacground, .redbackground, .vs, .timer{
+    position:absolute;
+    user-select:none;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: 'Rubik';
+    line-height: 1;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+* {
+    overflow: hidden;
+    user-select: none;
+}
+
+#red, #blue{
+    margin-top: 10px;
+}
+.osnova {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+}
+
+
+.bluebacground{
+    margin-top: 3%;
+    margin-left: 60%;
+    background-color: #4E68C7;
+    width: 200px;
+    height: 46px;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+}
+
+.redbackground{
+    margin-top: 3%;
+    margin-left: 40%;
+    background-color: #B55B5B;
+    width: 200px;
+    height: 46px;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+}
+.vs{
+    margin-top: 3%;
+    margin-left: 50%;
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Rubik Glitch';
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+}
+#zapiv{
+    margin-top: 2px;
+    margin-left: 55px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    line-height: 1;
+    font-weight: bold;
+}
+.timer{
+    margin-top: 6%;
+    margin-left: 50%;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    border-radius: 15px;
+    width: 250px;
+    transform: translate(-50%, -50%);
+}
+.backstatistics{
+    position: absolute;
+    top: 750px;
+    right: 150px;
+    /* margin-top: 550px;
+    margin-right: 9px; */
+    background-color: #22262E;
+    width: 268px;
+    height: 143px;
+    transform: translate(50%, -50%);
+}
+.backzapiv{
+    position: absolute;
+    top: 650px;
+    right: 150px;
+    /* margin-top: 550px;
+    margin-right: 9px; */
+    background-color: #22262E;
+    width: 245px;
+    height: 23px;
+    transform: translate(50%, -50%);
+    border-radius: 8px;
+}
+.lastbackstatistics{
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    margin-top: 14px;
+    margin-left: 17px;
+    background-color: #2A3036;
+    width: 234px;
+    height: 116px;
+    /* transform: translate(50%, -50%); */
+}
+
+#textcapt{
+    position: absolute;
+    margin-top: -110px;
+    margin-left: 85px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    line-height: 1;
+    font-weight: bold;
+    font-size: 12px;
+    opacity: 0.55;
+}
+
+#kill{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -80px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    line-height: 1;
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0.75;
+    white-space: nowrap;
+    width: 100px;
+}
+#kd{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -60px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    line-height: 1;
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0.75;
+    white-space: nowrap;
+    width: 100px;
+}
+#properety{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -40px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    line-height: 1;
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0.75;
+    white-space: nowrap;
+    width: 100px;
+}
+
+#rev{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -20px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    line-height: 1;
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 0.35;
+    white-space: nowrap;
+    width: 200px;
+}
+</style>
+<script>
+    window.InfoCapture = function(red, blue) {
+        document.querySelector('#red').innerHTML = 'Игроков: ' + red;
+        document.querySelector('#blue').innerHTML = 'Игроков: ' + blue;
+    }
+    window.InfoStatisticsCapture = function(kill, kd) {
+        document.querySelector('#kill').innerHTML = 'kill: ' + kill;
+        document.querySelector('#kd').innerHTML = 'kd.d: ' + kd;
+    }
+    var timeLeft = 200;
+
+function countdown() {
+    timeLeft--;
+    document.getElementById("timer").innerHTML = 'До конца капта: ' + timeLeft + " сек";
+    if (timeLeft <= 0) {
+        clearInterval(interval);
+
+    }
+}
+
+var interval = setInterval(countdown, 1000);
+</script>
+</html>

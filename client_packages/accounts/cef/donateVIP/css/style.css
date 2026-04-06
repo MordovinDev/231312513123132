@@ -1,0 +1,142 @@
+.fon, .png, .dom, .krugvip, .npc, .domm, .fongta{
+    position:absolute;
+    user-select:none;
+    background-attachment: fixed;
+}
+* {
+    overflow: hidden;
+}
+
+.fon {
+    top: 0;
+    left: 0;
+    margin-top: 3%;
+    margin-left: 14%;
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.3; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.png {
+    /* top: 0;
+    left: 5%;
+    margin-top: 7%;
+    margin-left: 55%; */
+    background-image: url('../images/fon.png');
+    background-size: cover;
+    border-radius: 3px;
+    /* background-position: right 35% bottom 45%; */
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    overflow:hidden;
+    font-family: cursive;
+    color: #f7f7f7;
+    /* opacity: 0.5; */
+}
+
+.fongta {
+    top: 0;
+    margin-top: 5%;
+    /* margin-left: 0; */
+    background-image: url('../images/fongta.png');
+    background: url('../images/fongta.png') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+}
+
+/* .npc {
+    bottom: 0;
+    right: 0;
+    margin-bottom: 10%;
+    margin-right: 35%;
+    background-image: url('../images/npc.png');
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    opacity: 0.2;
+    width:  100%;
+    height: 100%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.krugvip {
+    top: 0;
+    left: 0;
+    margin-left: 5%;
+    background: #f7f7f7;
+    /* filter: blur(1px);  */
+    /* box-shadow:0.375em 0.375em 0 0 #4a2c4e; */
+    /* border-radius: 15%; 
+    border-top-right-radius:10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    height: 100%;
+    width: 0.1%;
+    opacity: 0.3;
+}
+.dom {
+    top: 0;
+    margin-top: 0.5%;
+    /* margin-left: 0; */
+    background-image: url('../images/dom.png');
+    background: url('../images/dom.png') no-repeat;
+    background-size: cover;
+    width: 45px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+}
+
+.domm {
+    top: 0;
+    left: 0;
+    margin-top: 2.2%;
+    margin-left: 0.3%;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    font-size:11px;
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+}
+

@@ -1,0 +1,101 @@
+.phone, .autofon, .autoo, .meauto{
+    position:absolute;
+    user-select:none;
+    background-attachment: fixed;
+}
+* {
+    user-select: none;
+    overflow: hidden;
+}
+
+
+.phone {
+    position:absolute;
+    user-select:none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -190px;
+    margin-right: -170px;
+    transform: translate(-50%, -50%);
+    animation: dostal 1s forwards;
+}
+
+@keyframes dostal {
+    0% {
+        bottom: -30%;
+        transform: rotate(-15deg);
+    }
+    100% {
+    }
+}
+
+
+.autoo {
+    position:absolute;
+    user-select:none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 285px;
+    margin-right: 200px;
+    transform: translate(-50%, -50%);
+    animation: dostal 1s forwards;
+}
+
+@keyframes dostal {
+    0% {
+        bottom: -30%;
+        transform: rotate(-15deg);
+    }
+    100% {
+    }
+}
+.autofon {
+    z-index: 7;
+    position:absolute;
+    user-select:none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Rubik";
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 225px;
+    margin-right: 230px;
+    transform: translate(-50%, -50%);
+    animation: dostal 1s forwards;
+}
+
+@keyframes dostal {
+    0% {
+        bottom: -30%;
+        transform: rotate(-15deg);
+    }
+    100% {
+    }
+}
+
+
+.meauto {
+    z-index: 7;
+    position:absolute;
+    user-select:none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Rubik";
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 310px;
+    margin-right: 100px;
+    transform: translate(-50%, -50%);
+}

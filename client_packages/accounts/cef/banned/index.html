@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- banned b.y coltdm -->
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="osnova">
+        <div class="circle">
+            <div class="poloska"></div>
+                <div class="banned"><p>ЗАБАНЕН</p></div>
+
+            <div id="name" class="nick"><p>Ваш игровой ник: nick</p></div>
+            <div id="static" class="static"><p>Ваш static: #static</p></div>
+            <div id="reason" class="ban"><p>Причина бана: banned</p></div>
+    </div>
+</body>
+<script>
+        window.playerBanned = function(name, static, reason) {
+            document.querySelector('#name').innerHTML = "Ваш игровой ник: " + name
+            document.querySelector('#static').innerHTML = "Ваш static: #" + static
+            document.querySelector('#reason').innerHTML = "Причина бана: " + reason
+        }
+</script>
+</html>

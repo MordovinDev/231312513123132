@@ -1,0 +1,11 @@
+{
+	"maxplayers" : 400,
+	"name" : "Colt DM | Discord https://discord.gg/Colt", 
+	"gamemode" : "DEATCHMATCH", 
+	"language" : "ru",
+	"stream-distance" : 250.0,
+	"announce" : false,
+	"voice-chat" : true,
+	"csharp" : "disabled",
+	"port": 22005
+}

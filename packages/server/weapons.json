@@ -1,0 +1,10 @@
+[
+    {"hash": "0xCB96392F", "name": "weapon_revolver_mk2", "price": 50000},
+    {"hash": "0x0C472FE2", "name": "weapon_heavysniper", "price": 4000},
+    {"hash": "0x7FD62962", "name": "weapon_combatmg", "price": 130000},
+    {"hash": "0xDBBD7280", "name": "weapon_combatmg_mk2", "price": 350000},
+    {"hash": "0x9D07F764", "name": "weapon_mg", "price": 500000},
+    {"hash": "0x3AABBBAA", "name": "weapon_heavyshotgun", "price": 500},
+    {"hash": "0x83BF0278", "name": "weapon_carbinerifle", "price": 200},
+    {"hash": "0x61012683", "name": "weapon_gusenberg", "price": 1000}
+  ]

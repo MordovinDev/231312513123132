@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+html {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: 100%;
+}
+html body {
+  background: linear-gradient(151.19deg, rgba(173, 0, 255, 0.46) 0%, rgba(0, 0, 0, 0.26) 14.585%) no-repeat;
+}
+html img {
+  position: absolute;
+  right: 3.39vw;
+  top: 3.39vw;
+  height: 3.07vw;
+}
+
+.block_tittle h1 {
+  font-family: "Rubik";
+  color: #fff;
+  position: absolute;
+  top: 3.6vw;
+  left: 5.2vw;
+  font-size: 2.3vw;
+  display: inline-block;
+  padding: 0;
+  font-weight: 800;
+}
+.block_tittle h2 {
+  position: absolute;
+  top: 18.8vw;
+  left: 5.2vw;
+  font-size: 1.6vw;
+  color: #fff;
+  font-family: "Rubik";
+  font-weight: 400;
+  width: 24vw;
+}
+
+.confirm_dialog {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* margin: auto; */
+  height: 50vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 0.83vw;
+  color: #fff;
+}
+.confirm_dialog .confirm_block {
+  width: 29.69vw;
+  background-color: rgba(0, 0, 0, 0.1882352941);
+  padding: 1.5vw;
+}
+.confirm_dialog .confirm_block button {
+  border: none;
+  outline: none;
+  font-family: "Rubik";
+  font-weight: 300;
+  font-size: 0.95vw;
+  color: #fff;
+  padding: 0.83vw 2.3vw 0.83vw;
+  margin: 0 0.47vw 0 0.47vw;
+  background-color: #5b5b5b;
+}
+
+.buy_block {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 6vw;
+  text-align: center;
+  font-family: "Rubik";
+  font-weight: 400;
+}
+.buy_block input {
+  border: none;
+  outline: none;
+  -webkit-backdrop-filter: blur(7.8px);
+          backdrop-filter: blur(7.8px);
+  background: rgba(29, 29, 29, 0.55);
+  padding: 2.1vw 0.7vw 2.1vw 1.6vw;
+  width: 27.6vw;
+  font-size: 1.3vw;
+  color: #fff;
+}
+.buy_block .block_buy_buttons {
+  margin-top: 0.99vw;
+}
+.buy_block .block_buy_buttons button {
+  border: none;
+  outline: none;
+  font-family: "Rubik";
+  font-weight: 300;
+  font-size: 0.95vw;
+  color: #fff;
+  padding: 0.83vw 2.3vw 0.83vw;
+  margin: 0 0.47vw 0 0.47vw;
+}
+.buy_block .block_buy_buttons .buy_money {
+  background-color: #4fff61;
+}
+.buy_block .block_buy_buttons .buy_dp {
+  background-color: #FF4F4F;
+}

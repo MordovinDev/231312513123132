@@ -1,0 +1,487 @@
+.osnova{
+    position:absolute;
+    user-select:none;
+    background-attachment: fixed;
+}
+
+
+
+.osnova {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #0F0F0F;
+    position:absolute;
+}
+
+
+.hello{
+    margin-top: 110px;
+    margin-left: 123px;
+    font-size: 36px;
+    font-family: 'Rubik';
+    color: #ffffff;
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: animation 1s forwards;
+}
+
+.nameserver{
+    margin-top: 7px;
+    margin-left: 179px;
+    font-size: 36px;
+    font-family: 'Rubik';
+    color: #ffffff;
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: animation 1.2s forwards;
+}
+
+.peds{
+    top: 50%;
+    left: 50%;
+    z-index: 7;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: animationpeds 2s forwards;
+}
+
+
+.backrounddonate{
+    top: 0;
+    right: 0;
+    margin-top: 173px;
+    margin-right: 199px;
+    position: absolute;
+    background-color: #1C1822;
+    width: 539px;
+    height: 87px;
+    border-radius: 8px;
+    animation: adnimationlist 2s forwards;
+}
+
+.backrounddiscord{
+    top: 0;
+    right: 0;
+    margin-top: 173px;
+    margin-right: 199px;
+    background-color: #1C1822;
+    width: 539px;
+    height: 87px;
+    border-radius: 8px;
+    animation: adnimationlist 2s forwards;
+}
+.backgroundlineardonate{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 216px;
+    margin-right: 738px;
+    background-color: #D9D9D9;
+    opacity: 0.65;
+    width: 192px;
+    height: 1px;
+    border-radius: 5px;
+    animation: adnimationlisttwo 1.75s forwards;
+}
+.backgroundlineardiscord{
+    top: 0;
+    right: 0;
+    margin-top: 175px;
+    margin-right: 738px;
+    background-color: #D9D9D9;
+    width: 192px;
+    height: 1px;
+    border-radius: 5px;
+    animation: adnimationlisttwo 1.75s forwards;
+}
+.backgroundrolldonate{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 205px;
+    margin-right: 930px;
+    background-color: #3E539B;
+    opacity: 0.65;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    animation: animroll 1.75s forwards;
+}
+
+.backgroundrolldiscord{
+    top: 0;
+    right: 0;
+    margin-top: 176px;
+    margin-right: 930px;
+    background-color: #3E539B;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    animation: animroll 1.75s forwards;
+}
+.background-image-donate{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 193px;
+    margin-right: 647px;
+    animation: images 1.75s forwards;
+}
+.background-image-discord{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 365px;
+    margin-right: 647px;
+    animation: imagestwo 1.75s forwards;
+}
+
+
+.donate{
+    z-index: 7;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 194px;
+    margin-right: 467px;
+    font-size: 36px;
+    font-family: 'Rubik';
+    color: #3A6C45;
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.3s linear;
+    animation: textdonate 1.75s forwards;
+}
+.donate:hover {
+    color: #ffffff;
+}
+.discord{
+    z-index: 7;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 370px;
+    margin-right: 366px;
+    font-size: 36px;
+    font-family: 'Rubik';
+    color: #7691ED;
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: textdiscord 1.75s forwards;
+    transition: 0.3s linear;
+}
+.discord:hover {
+    color: #ffffff;
+}
+
+.background-donate{
+    z-index: 7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* margin-top: 207px;
+    margin-right: 722px; */
+    background-color: #131313;
+    width: 690px;
+    height: 615px;
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+}
+
+
+.deposit{
+    z-index: 7;
+    top: 0;
+    right: 0;
+    margin-top: 42px;
+    /* margin-left: 111px; */
+    font-size: 40px;
+    font-family: 'Rubik';
+    color: #FFFFFF;
+    opacity: 0.65;
+    line-height: 1;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.infodeposit{
+    z-index: 7;
+    top: 0;
+    right: 0;
+    margin-top: 15px;
+    /* margin-left: 111px; */
+    font-size: 20px;
+    font-family: 'Rubik';
+    color: #FFFFFF;
+    opacity: 0.35;
+    line-height: 1;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.login{
+    z-index: 7;
+    top: 0;
+    right: 0;
+    margin-top: 77px;
+    /* margin-left: 111px; */
+    font-size: 20px;
+    font-family: 'Rubik';
+    color: #FFFFFF;
+    opacity: 0.65;
+    line-height: 1;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.login input {
+    text-align: center;
+    width: 506px;
+    height: 83px;
+    background-color: #0F0F0F;
+    border-color: #ffffff;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.summa{
+    z-index: 7;
+    top: 0;
+    right: 0;
+    margin-top: 50px;
+    /* margin-left: 111px; */
+    font-size: 20px;
+    font-family: 'Rubik';
+    color: #FFFFFF;
+    opacity: 0.65;
+    line-height: 1;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.summa input {
+    text-align: center;
+    width: 506px;
+    height: 83px;
+    background-color: #0F0F0F;
+    border-color: #ffffff;
+    border-radius: 8px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+}
+.succefy {
+    z-index: 7;
+    top: 0;
+    right: 0;
+    margin-top: 68px;
+    margin-left: 180px;
+    text-align: center;
+    color: white;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 1;
+    font-weight: bold;
+    opacity: 0.65;
+    background-color: #241132;
+    border-radius: 5px;
+    width: 330px;
+    height: 76px;
+    transition: 0.3s linear;
+}
+.succefy:hover {
+    color: #0F0F0F; /* Цвет текста */
+    /* border-color: blue; */
+    background-color: #585858;
+    /* background: #f66d52; */
+}
+
+#correctortext{
+    top: 0;
+    padding-top: 26px;
+}
+
+.close{
+    z-index: 7;
+    top: 0;
+    right: 0;
+    margin-top: 5px;
+    margin-left: 15px;
+    color: white;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 1;
+    font-weight: bold;
+    opacity: 0.35;
+    border-radius: 5px;
+    transition: 0.3s linear;
+}
+.close:hover {
+    color: #868686;
+}
+
+@keyframes animation {
+    0% {
+        color: rgb(0, 0, 0);
+        filter: blur(20px);
+        margin-left: -100px;
+    }
+    100% {
+        color: rgb(255, 255, 255);
+        filter: blur(0px);
+        margin-left: 123px;
+    }
+}
+@keyframes animationpeds {
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.error {
+    margin-left: 270px;
+    z-index: 7;
+    position: absolute;
+    color: rgb(121, 5, 5);
+    font-size: 22px;
+    margin-top: 5px;
+  }
+
+.donate-deposit{
+    z-index: 7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.background-search{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 428px;
+    height: 81px;
+    background-color: #161616;
+    border-radius: 5px;
+}
+
+.users-accept{
+    bottom: 0;
+    left: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    color: white;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 1;
+    font-weight: bold;
+    opacity: 0.35;
+    border-radius: 5px;
+    transition: 0.3s linear;
+}
+.users-accept:hover {
+    color: #868686;
+}
+
+.pos-konf{
+    bottom: 0;
+    left: 0;
+    margin-left: 15px;
+    color: white;
+    font-family: "Rubik";
+    font-size: 20px;
+    line-height: 1;
+    font-weight: bold;
+    opacity: 0.35;
+    border-radius: 5px;
+    transition: 0.3s linear;
+}
+.pos-konf:hover {
+    color: #868686;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

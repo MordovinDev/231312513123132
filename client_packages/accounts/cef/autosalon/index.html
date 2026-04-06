@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic DM - Автосалон</title>
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Rubik:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="brand">
+        <span class="brand-dynamic">Dynamic</span>
+        <span class="brand-dm">DM</span>
+    </div>
+
+    <div class="text"><p>Автосалон</p></div>
+    <div class="bacgroundleftsell"></div>
+    <div class="bacgroundrightbuy"></div>
+    <div class="poloska"></div>
+    <div class="poloskaa"></div>
+
+    <div class="fonfrogger2"><p>Frogger2</p></div>
+    <div id="infofrogger2" class="infofrogger2"><p>Информация</p></div>
+    <div class="imagefrogger2"><img src="images/frogger.png" height="50" width="150"></div>
+    <div id="ownedfrogger2" style="display: none;" class="ownedfrogger2">
+        <div class="infobuyfrogger2"><p>Frogger2<br><br>5.500.000$</p></div>
+        <div class="imagefrogger2buy"><img src="images/frogger.png" height="100" width="400"></div>
+        <div class="buyfrogger2buy"><p onclick="mp.trigger('autoSalonBuy', 1)">Купить</p></div>
+    </div>
+
+    <div class="fonavtr"><p>AWPR</p></div>
+    <div id="infoavtr" class="infoavtr"><p>Информация</p></div>
+    <div class="imageavtr"><img src="images/avtr.png" height="50" width="150"></div>
+    <div style="display: none;" id="ownedavtr">
+        <div class="infobuyavtr"><p>AWPR<br><br>7.000.000$</p></div>
+        <div class="imageavtrbuy"><img src="images/avtr.png" height="100" width="400"></div>
+        <div class="buyavtrbuy"><p onclick="mp.trigger('autoSalonBuy', 2)">Купить</p></div>
+    </div>
+
+    <div class="fondivo"><p>Baguvva Dive</p></div>
+    <div id="infodivo" class="infodivo"><p>Информация</p></div>
+    <div class="imagedivo"><img src="images/divo.png" height="50" width="150"></div>
+    <div style="display: none;" id="owneddivo">
+        <div class="infobuyduvi"><p>Baguvva Dive<br><br>4.500.000$</p></div>
+        <div class="imagedivobuy"><img src="images/divo.png" height="100" width="400"></div>
+        <div class="buydivobuy"><p onclick="mp.trigger('autoSalonBuy', 3)">Купить</p></div>
+    </div>
+
+    <div class="fongemera"><p>Cumarra</p></div>
+    <div id="infogemera" class="infogemera"><p>Информация</p></div>
+    <div class="imagegemera"><img src="images/gemera.png" height="75" width="130"></div>
+    <div style="display: none;" id="ownedgemeraa">
+        <div class="infobuygemera"><p>Cumarra<br><br>600.000$</p></div>
+        <div class="imagegemerabuy"><img src="images/gemera.png" height="150" width="400"></div>
+        <div class="buygemerabuy"><p onclick="mp.trigger('autoSalonBuy', 4)">Купить</p></div>
+    </div>
+
+    <div id="carbatixd">
+        <div class="fonbati"><p>Bati2</p></div>
+        <div id="infobati" class="infobati"><p>Информация</p></div>
+        <div class="imagebati"><img src="images/bati2.png" height="75" width="130"></div>
+        <div style="display: none;" id="ownedbatii">
+            <div class="infobuybati"><p>Bati2<br><br>1.000.000$</p></div>
+            <div class="imagebatibuy"><img src="images/bati2.png" height="150" width="400"></div>
+            <div class="buybatibuy"><p onclick="mp.trigger('autoSalonBuy', 5)">Купить</p></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

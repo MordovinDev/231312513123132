@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="osnova">
+        <div class="back">
+            <div class="info">Админ-панель</div>
+            <div class="circle"></div>
+            <div class="eventsText" id="eventsText">Мероприятия</div>
+            <div class="commandsText" id="commandsText">Команды</div>
+            <div class="funText" id="funText">Фан-меню</div>
+            <div class="reportText" id="searchText">Проверка на ПО</div>
+            <div class="xyeta">. . .<br>. . .<br>. . .<br><br>. . .<br>. . .<br>. . .<br><br>. . .<br>. . .<br>. . .<br><br>. . .<br>. . .<br>. . .</div>
+            <div id="ownedCommand" style="display: none;">
+                <div class="text" onclick="mp.trigger('adm1')">Команды первого уровня</div>
+                <div class="text" onclick="mp.trigger('adm2')">Команды второго уровня</div>
+                <div class="text" onclick="mp.trigger('adm3')">Команды третьего уровня</div>
+                <div class="text" onclick="mp.trigger('adm3')">Команды четвертого уровня</div>
+                <div class="text" onclick="mp.trigger('adm3')">Команды пятого уровня</div>
+                <div>Генерал гавс нападает!!</div>
+            </div>
+            <div id="ownedEvents" style="display: none;">
+                <div class="bcEvents"></div>
+                <div class="textEvents">Второе гетто</div>
+                <div class="infoEvents">Всего 4 локации<br>Выключить гетто - 5<br>Изменить локацию - "Сменить локацию"</div>
+                <!-- <div class="locationEvents">Сейчас локация: "undefined"</div> -->
+                <div class="inputxd"><input type="number" id="textinputik" placeholder="Введите локацию (1/2/3/4/5)"></div>
+                <div class="nekstLocationEvents">Сменить локацию</div>
+
+                <div class="bcEventsNew"></div>
+                <div class="textEventsNew">Запуск мероприятия</div>
+                <div class="infoEventsNew">Ставите точку<br>пишите текст<br>игроки смогут тп на МП через команду</div>
+                <div class="inputEventsNewText"><input type="text" id="textinputNew" placeholder="Введите текст для МП"></div>
+                <div class="CreateSetnew" onclick="mp.trigger('SetSpawnEvents')">Поставить новую точку спавна</div>
+                <div class="StartSetnew" >Запустить телепорт на МП</div>
+                <div class="CloseSetnew" onclick="mp.trigger('CloseEvents')">Закрыть МП</div>
+
+                <div class="bcEventsNeww"></div>
+                <div class="textCaptureNew">Запуск капта</div>
+                <div class="StartSetCapture" onclick="mp.trigger('newCapture')">Запустить капт</div>
+                <div class="CloseSetCapture" onclick="mp.trigger('closeCapture')">Выключить капт</div>
+            </div>
+            <div id="ownedFanMenu" style="display: none;">
+                <div class="textFan">Выбери скин:</div>
+                <div class="textFan" onclick="mp.trigger('defolt')">Мужчина</div>
+                <div class="textFan" onclick="mp.trigger('jen')">Женщина</div>
+                <div class="textFan" onclick="mp.trigger('kyrica')">Курица</div>
+                <div class="textFan" onclick="mp.trigger('kot')">Кот</div>
+                <div class="textFan" onclick="mp.trigger('obezana')">Обезьяна</div>
+                <div class="textFan" onclick="mp.trigger('pig')">Свинья</div>
+                <div class="textFan" onclick="mp.trigger('vorona')">Ворона</div>
+            </div>
+            <div id="ownedSearch" style="display: none;">
+                <div class="backgroundSearch"></div>
+                <div class="textInfoSearch">Проверка игрока</div>
+                <div class="inputSearch"><input type="number" id="textInoutSearch" placeholder="Введите static игрока"></div>
+                <div class="searchFind">Вызвать игрока на проверку</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector('.StartSetnew').addEventListener('click', function() {
+        let textPlayer = document.querySelector('#textinputNew').value;
+        mp.trigger('StartSetnew', textPlayer);
+    });
+
+    document.querySelector('.searchFind').addEventListener('click', function() {
+        let findPlayer = document.querySelector('#textInoutSearch').value;
+        mp.trigger('c:FindPlayer', findPlayer);
+    });
+</script>
+<script src="script.js"></script>
+</html>
+
+
+
+
+
+

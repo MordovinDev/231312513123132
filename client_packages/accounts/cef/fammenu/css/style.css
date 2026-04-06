@@ -1,0 +1,284 @@
+.osnova, .circle{
+    position:absolute;
+    user-select:none;
+    background-attachment: fixed;
+}
+
+
+* {
+    overflow: hidden;
+}
+
+
+.osnova {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+}
+.circle {
+    top: 50%;
+    left: 50%;
+    width: 882px;
+    height: 486px;  
+    background: #2A3036;
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+}
+
+
+#familyName {
+    padding-top: 12px;
+    padding-left: 16px;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    opacity: 0.8;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.owned_family {
+    padding-top: 12px;
+    padding-left: 12px;
+    font-size: 16px;
+    color: #555C64;
+    font-family: 'Rubik';
+    opacity: 0.8;
+    width: 120px;
+    white-space: nowrap;
+    font-weight: bold;
+    transition: 0.3s linear;
+}
+
+.owned_family:hover {
+    color: #ffffff;
+}
+
+.padding_family{
+    margin-top: 12px;
+}
+
+
+
+#settings_family {
+    margin-top: 150px;
+}
+
+
+#linear_and_name {
+    width: 880px;
+    height: 1px;
+    background-color: #7E7E7E;
+    margin-top: 10px;
+    margin-right: 12px;
+}
+
+
+
+#linear_last_family{
+    position: absolute;
+    z-index: 7;
+    margin-left: 149px;
+    width: 1px;
+    height: 434px;
+    background-color: #7E7E7E;
+}
+
+
+.info_family {
+    margin-left: 188px;
+    position: absolute;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+#info_infofamily_text{
+    margin-left: 230px;
+    margin-top: 26px;
+}
+
+
+#rep_text_fam {
+    margin-top: 200px;
+}
+
+
+#all_members_family{
+    margin-top: 25px;
+    margin-left: 370px;
+    position: absolute;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+
+
+#member_family {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+
+
+
+.backmembers {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 370px;
+    width: 500px;
+    height: 300px;
+    background-color: #2A3036;
+}
+
+
+
+#capture_text {
+    position: absolute;
+    margin-left: 450px;
+    margin-top: 27px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+
+#text_capt_info {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 57px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+
+
+
+
+input[type="text"]::-webkit-inner-spin-button, 
+input[type="text"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+}
+
+.inputFamCapture input {
+    z-index: 7;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 300px;
+    width: 300px;
+    height: 20px;
+    background-color: #ffffff;
+    opacity: 0.55;
+    border-radius: 8px;
+    color: hsl(288, 6%, 16%);
+    font-family: 'Rubik';
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+}
+
+
+#captureFamily{
+    position: absolute;
+    color: white;
+    font-family: "Rubik";
+    margin-top: 390px;
+    margin-left: 350px;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #202020;
+    border: 1.5px solid rgb(116, 116, 116);
+    padding: 5px;
+    width: 200px;
+    transition: 0.3s linear;
+}
+
+#captureFamily:hover {
+    color: #ffffff;
+    background-color: #a938c5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #947373;
+  }
+
+  /* Применение стилей */
+  .item {
+    overflow-y: scroll;
+}
+
+
+
+.skroll{
+    overflow-y: hidden;
+}
+
+.skrolltwo{
+    overflow-y: scroll; height: 300px;
+}
+
+.skrolltwo::-webkit-scrollbar-thumb{
+    background-color: #dfdfdf;
+    border-radius: 20px;
+}
+
+.skrolltwo::-webkit-scrollbar-track{
+    background-color:#929292;
+    border-radius: 20px;
+    opacity: 0.55;
+}

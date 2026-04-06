@@ -1,0 +1,239 @@
+.osnova, .circle, .info, .poloska, .adm1, .adm2, .adm3, .poloskaa, .rep, .defolt, .kyrica, .kot, .jen, .obezana{
+    position:absolute;
+    user-select:none;
+    background-attachment: fixed;
+}
+
+* {
+    overflow: hidden;
+}
+
+
+.osnova {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    animation: p 1.5s forwards;
+}
+@keyframes p {
+    0% {
+        top: -80%;
+        transform: rotate(-15deg);
+    }
+    100% {
+    }
+}
+
+.poloska {
+    top: 15%;
+    left: 50%;
+    width: 800px;
+    height: 3px;
+    background-color: aliceblue;
+    opacity: 0.5;
+    transform: translate(-50%, -50%);
+}
+
+.poloskaa {
+    top: 60%;
+    left: 35%;
+    width: 3px;
+    height: 358px;
+    background-color: aliceblue;
+    opacity: 0.5;
+    transform: translate(-50%, -50%);
+}
+
+
+.circle {
+    top: 50%;
+    left: 50%;
+    /* margin-top: 50%;
+    margin-left: 50%; */
+    width: 800px;
+    height: 400px;
+    /* width: 1600px;
+    height: 800px; */
+    background-color: rgb(129, 128, 128);
+    box-shadow:0.375em 0.375em 0 0 rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+}
+
+.info {
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 20px;
+    color: rgb(47, 45, 48);
+    top: 8%;
+    left: 50%;
+    /* text-transform: uppercase; */
+    line-height: 1;
+    font-weight: bold;
+    /* background-color: rgb(230, 203, 237); */
+    transition: 1s linear; /* Время изменения */
+}
+
+.adm1 {
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 20px;
+    color: rgb(47, 45, 48);
+    top: 25%;
+    left: 65%;
+    /* text-transform: uppercase; */
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    /* background-color: rgb(230, 203, 237); */
+    transition: 1s linear; /* Время изменения */
+}
+.adm1:hover {
+    color: #ffffff; /* Цвет текста */
+}
+
+.adm2 {
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 20px;
+    color: rgb(47, 45, 48);
+    top: 50%;
+    left: 65%;
+    /* text-transform: uppercase; */
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    /* background-color: rgb(230, 203, 237); */
+    transition: 1s linear; /* Время изменения */
+}
+.adm2:hover {
+    color: #ffffff; /* Цвет текста */
+}
+
+
+.adm3 {
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 20px;
+    color: rgb(47, 45, 48);
+    top: 75%;
+    left: 65%;
+    /* text-transform: uppercase; */
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    /* background-color: rgb(230, 203, 237); */
+    transition: 1s linear; /* Время изменения */
+}
+.adm3:hover {
+    color: #ffffff; /* Цвет текста */
+}
+
+
+
+
+.rep {
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 17px;
+    color: rgb(47, 45, 48);
+    top: 25%;
+    left: 17%;
+    /* text-transform: uppercase; */
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    /* background-color: rgb(230, 203, 237); */
+
+}
+
+
+.defolt {
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 17px;
+    color: rgb(82, 55, 95);
+    top: 35%;
+    left: 17%;
+    /* text-transform: uppercase; */
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 1s linear;
+}
+.defolt:hover {
+    color: #ffffff; /* Цвет текста */
+}
+
+.jen {
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 17px;
+    color: rgb(82, 55, 95);
+    top: 45%;
+    left: 17%;
+    /* text-transform: uppercase; */
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 1s linear;
+}
+.jen:hover {
+    color: #ffffff; /* Цвет текста */
+}
+
+.kyrica {
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 17px;
+    color: rgb(82, 55, 95);
+    top: 55%;
+    left: 17%;
+    /* text-transform: uppercase; */
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 1s linear;
+}
+.kyrica:hover {
+    color: #ffffff; /* Цвет текста */
+}
+
+
+.kot {
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 17px;
+    color: rgb(82, 55, 95);
+    top: 65%;
+    left: 17%;
+    /* text-transform: uppercase; */
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 1s linear;
+}
+.kot:hover {
+    color: #ffffff; /* Цвет текста */
+}
+
+.obezana {
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    font-size: 17px;
+    color: rgb(82, 55, 95);
+    top: 75%;
+    left: 17%;
+    /* text-transform: uppercase; */
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 1s linear;
+}
+.obezana:hover {
+    color: #ffffff; /* Цвет текста */
+}

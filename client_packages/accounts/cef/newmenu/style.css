@@ -1,0 +1,137 @@
+.container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #272525;
+    top: 50%;
+    left: 50%;
+    width: 60vw;
+    height: 32vw;
+    border-radius: 0.2vw;
+}
+* {user-select: none;}
+/* .top {
+	border-left: 4vw solid transparent;
+	border-right: 4vw solid transparent;
+	border-bottom: 3vw solid #555;
+    z-index: 7;
+}
+.bottom {
+	border-left: 4vw solid transparent;
+	border-right: 4vw solid transparent;
+	border-bottom: 3vw solid #555;
+    transform: rotate(180deg);
+    z-index: 7;
+} */
+.back {
+    color: #ffffff;
+    font-family: 'Rubik Glitch';
+    font-size: 3vw;
+    transform: rotate(-45deg);
+    /* padding-right: 0.6vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerBack {
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(45deg);
+    top: 0%;
+    left: 50%;
+    background-color: #555;
+    border: 0.1vw solid #272525;
+    width: 4vw;
+    height: 4vw;
+}
+
+.clicks {
+    font-size: 1vw;
+    font-family: 'Inter';
+    color: #ffffff;
+}
+.linear {
+    position: absolute;
+    bottom: 2.5vw;
+    background-color: #515151;
+    width: 100%;
+    height: 0.1vw;
+}
+.play, .donate, .cases, .settings {
+    position: absolute;
+    bottom: 0.7vw;
+    transition: 0.3s linear;
+}
+
+.play {
+    margin-left: 5vw;
+}
+
+.donate {
+    margin-left: 20vw;
+}
+.cases {
+    margin-left: 35vw;
+}
+.settings {
+    margin-left: 50vw;
+}
+.play:hover {
+    color: #666363;
+}
+.donate:hover {
+    color: #666363;
+}
+.cases:hover {
+    color: #666363;
+}
+.settings:hover {
+    color: #666363;
+}
+.playIs {
+    margin-top: 1.5vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #272525;
+    border: 0.1vw solid #555;
+    padding: 0.2vw;
+}
+
+.fracImg img {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 9vw;
+    min-height: 27vw;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5vw;
+}
+
+.donateIs {
+    margin-top: 3vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background-color: #272525;
+    border: 0.1vw solid #555; */
+    /* padding: 0.3vw; */
+}
+.donateImg {
+    font-size: 1vw;
+    font-family: 'Inter';
+    color: #ffffff;
+    text-align: center;
+}
+
+.donateIs img {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 19vw;
+    min-height: 23vw;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5vw;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="osnova">
+            <div class="circle">
+                <p id="create_fam_text">Создать семью</p>
+                <div class="inputCreateFamily"><input type="text" id="nameFam" placeholder="Введите название семьи"></div>
+                <div class="successFam">Создать за 700.000$</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector('.successFam').addEventListener('click', function() {
+        let nameFamily = document.querySelector('#nameFam').value;
+        mp.trigger('c:createFamily', nameFamily);
+    });
+</script>
+</html>

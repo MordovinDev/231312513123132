@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="osnova">
+            <div class="circle">
+                <div id="familyName">Меню семьи "undefined"</div>
+                <div id="linear_and_name"></div>
+                <div id="linear_last_family"></div>
+                <div class="info_family" id="info_family" style="display: none;">
+                    <div id="info_infofamily_text">Информация о семье</div>
+                    <div id="membersAll">Участников всего: undefined</div>
+                    <div id="membersOnline">Участников в сети: undefined</div>
+                    <!-- <div id="money_in_family">Денег в семье: undefined$</div> -->
+                    <div id="reputationFamily">Репутация семьи: undefined</div>
+                    <p id="rep_text_fam">x Репутацию можно получить за выигранные семейные капты;<br>x Репутацию можно тратить, получая деньги, ресурсы, машины (авто в разработке);<br>x Имея большую репутацию, можно попасть в TOP FORBS семей (в разработке)</p>
+                </div>
+                <div class="capture_info" id="capture_info" style="display: none;">
+                    <div id="capture_text">Забив капта</div>
+                    <div id="text_capt_info">После нажатия на кнопку “Забить капт”, вы забьете капт семье, игрокам<br>
+                        вашей и протиповоложной семьи, прийдет информация, что через 3 минут<br>
+                        начнется семейный капт, по окончанию времени (3 минут) у игроков будет<br>
+                        ровно 1 минута что бы телепортироваться на капт в офисе семьи, по<br>
+                        окончанию минуты капт начнется.<br>
+                        <br>
+                        <br>
+                        x Если вы проиграете капт, то получите -10 репутации.<br>
+                        x Если вы выиграете капт, то получите +10 репутации.<br><br>
+                        
+                        Правила капта можно посмотреть в дискорде.<br><br><br>(Выбор локации, оружия, правил в разработке)</div>
+                    <div class="inputFamCapture"><input type="text" id="famCapture" placeholder="Введите название семьи, которой бьете капт"></div>
+                    <div class="captureFamily" id="captureFamily">Забить капт</div>
+                </div>
+                    <div class="members_family_play" id="members_family_play" style="display: none;">
+                        <p id="all_members_family" >Все участники семьи "undefined"</p>
+                        <div class="backmembers">
+                            <div class="skroll">
+                                <div class="skrolltwo">
+                                    <p id="member_family">(#1) nafanya</p>
+                                    <p id="member_family">(#1) nafanya</p>
+                                    <p id="member_family">(#1) nafanya</p>
+                                    <p id="member_family">(#1) nafanya</p>
+                                    <p id="member_family">(#1) ываываавыавыываваываы</p>
+                                    <p id="member_family">(#1) lol</p>
+                                    <p id="member_family">(#1) nafanya</p>
+                                    <p id="member_family">(#1) nafanya</p>
+                                    <p id="member_family">(#1) nafanya</p>
+                                    <p id="member_family">(#1) nafanya</p>
+                                    <p id="member_family">(#1) ываываавыавыываваываы</p>
+                                    <p id="member_family">(#1) lol</p>
+                                    <p id="member_family">(#1) ываываавыавыываваываы</p>
+                                    <p id="member_family">(#1) lol</p>
+                                    <p id="member_family">(#1) ываываавыавыываваываы</p>
+                                    <p id="member_family">(#1) lol</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="owned_family">
+                    <div id="information_family" class="padding_family owned_family">Информация</div>
+                    <div id="members_family" class="padding_family owned_family">Участники</div>
+                    <div id="invite_family" class="padding_family owned_family">Инвайт/кик</div>
+                    <div id="managment_family" class="padding_family owned_family">Управление</div>
+                    <div id="capture_family" class="padding_family owned_family">Капты</div>
+                    <div id="settings_family" class="padding_family owned_family">Настройки</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    window.playerUpdateFamilyMenu = function(familyName, membersAll, membersOnline, reputationFamily) {
+        document.querySelector('#familyName').innerHTML = "Информация о семье '" + familyName + " '";
+        document.querySelector('#membersAll').innerHTML = "Игроков в семье всего: " + membersAll;
+        document.querySelector('#membersOnline').innerHTML = "Игроков в семье в сети: " + membersOnline;
+        document.querySelector('#membersOnline').innerHTML = "Репутация семьи: " + reputationFamily;
+    }
+    document.querySelector('.captureFamily').addEventListener('click', function() {
+        let captureFamily = document.querySelector('#famCapture').value;
+        mp.trigger('c:captureFamily', captureFamily);
+    });
+</script>
+<script src="script.js"></script>
+</html>

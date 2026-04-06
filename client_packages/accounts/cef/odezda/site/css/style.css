@@ -1,0 +1,195 @@
+.osnova, .cult, .cultt, .info, .cultfoto, .ikonka1, .gta{
+    position:absolute;
+    user-select: none;
+    overflow:hidden;
+    /* overflow-y: hidden; */
+}
+
+* {
+    overflow:hidden;
+}
+
+
+
+/* .osnova{
+    top: -6px;
+    right: 0;
+    margin-right: 0px;
+    padding: 0;
+} */
+.osnova {
+    top: 0;
+    right: 0;
+    background-image: url('../images/fon.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%; /* высота по вашему выбору */
+    position: absolute;
+    overflow:hidden;
+}
+.gta {
+    top: 16.5%;
+    right: 5%;
+    margin-top: 7%;
+    margin-right: 5%;
+    background-image: url('../images/gta.png');
+    background-size: cover;
+    background-position: right 35% bottom 45%;
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    overflow:hidden;
+    animation: gtaa 2s forwards;
+}
+@keyframes gtaa {
+    0% {
+        color: rgb(0, 0, 0);
+        filter: blur(20px);
+        right: -70%;
+    }
+    100% {
+        color: rgb(255, 255, 255);
+        filter: blur(0px);
+        right: -15%;
+        transform: translateX(-50%);
+    }
+  }
+  .cultfoto {
+    background-image: url('../images/cult.png');
+    background-size: cover;
+    background-position: center;
+    top: 25%;
+    left: 0;
+    margin-left: 45%;
+    width: 50px;
+    height: 40px; /* высота по вашему выбору */
+    position: absolute;
+    overflow:hidden;
+    animation: dada 2s forwards; /* запуск анимации */
+  }
+@keyframes dada {
+    0% {
+        background-position: center;
+        color: rgb(0, 0, 0);
+        filter: blur(20px);
+        left: -70%; 
+    }
+    100% {
+        background-position: center;
+        color: rgb(255, 255, 255);
+        filter: blur(0px);
+        left: -28%;
+        transform: translateX(-50%);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+.cult{
+    background-size: cover;
+    background-position: center;
+    top: 10%;
+    left: 0;
+    margin-left: 45%;
+    width: 50%;
+    height: 50%; /* высота по вашему выбору */
+    font-size:30px;
+    font-family: cursive;
+    position: absolute;
+    overflow:hidden;
+    color:rgb(255, 255, 255);
+    animation: animka 2s forwards; /* запуск анимации */
+}
+@keyframes animka {
+    0% {
+        color: rgb(0, 0, 0);
+        filter: blur(20px);
+        left: -50%; /* начальное положение */
+    }
+    100% {
+        color: rgb(255, 255, 255);
+        filter: blur(0px);
+        left: -5%; /* конечное положение - по центру */
+        transform: translateX(-50%);
+    }
+  }
+.cultt{
+    background-size: cover;
+    background-position: center;
+    top: 18%;
+    left: 0;
+    margin-left: 45%;
+    width: 50%;
+    height: 50%; /* высота по вашему выбору */
+    font-size:30px;
+    font-family: cursive;
+    position: absolute;
+    overflow:hidden;
+    color:rgb(255, 255, 255);
+    animation: anim 2s forwards; /* запуск анимации */
+}
+@keyframes anim {
+    0% {
+        color: rgb(0, 0, 0);
+        filter: blur(20px);
+        left: -70%; /* начальное положение */
+    }
+    100% {
+        color: rgb(255, 255, 255);
+        filter: blur(0px);
+        left: -0.5%; /* конечное положение - по центру */
+        transform: translateX(-50%);
+    }
+  }
+.info{
+    background-size: cover;
+    background-position: center;
+    top: 31.5%;
+    left: 0;
+    margin-left: 45%;
+    width: 50%;
+    height: 50%; /* высота по вашему выбору */
+    font-size:10px;
+    font-family: cursive;
+    position: absolute;
+    overflow:hidden;
+    color:rgb(255, 255, 255);
+    animation: cultinfoo 2s forwards; /* запуск анимации */
+}
+@keyframes cultinfoo {
+    0% {
+        color: rgb(0, 0, 0);
+        filter: blur(20px);
+        left: -70%; /* начальное положение */
+    }
+    100% {
+        color: rgb(146, 146, 146);
+        filter: blur(0px);
+        left: 1%; /* конечное положение - по центру */
+        transform: translateX(-50%);
+    }
+  }
+
+
+/* .blur-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f00;
+    filter: blur(5px); 
+  } */
+
+
+/* убирает скролл  */
+::-webkit-scrollbar {
+    width: 0;
+}
+

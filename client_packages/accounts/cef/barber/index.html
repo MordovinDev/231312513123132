@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="back"></div>
+    <div class="save" onclick="mp.trigger('savesBarber')"">Сохранить</div>
+    <div class="bacgroundrigfive">
+        <div class="osnovafive">
+            <div class="mas" id="mas" style="display: none;">
+                <div class="skroll">
+                    <div class="skrolltwo">
+                    <div class="maski">
+                        <div class="masklist">Выберите прическу</div>
+                        <div class="maskfut" onclick="mp.trigger('givehair', 1)"> <img src="images/rash.png" width="50" height="35"><p id="maskfut">Лысый</p></div>
+                        <div class="maskfut" onclick="mp.trigger('givehair', 2)"> <img src="images/rash.png" width="50" height="35"><p id="maskfut">Обычная стрижка</p></div>
+                        <div class="maskfut" onclick="mp.trigger('givehair', 3)"> <img src="images/rash.png" width="50" height="35"><p id="maskfut">Дреды</p></div>
+                        <div class="maskfut" onclick="mp.trigger('givehair', 4)"> <img src="images/rash.png" width="50" height="35"><p id="maskfut">Дреды 2</p></div>
+                        <div class="maskfut" onclick="mp.trigger('givehair', 5)"> <img src="images/rash.png" width="50" height="35"><p id="maskfut">Шторы</p></div>
+                        <div class="maskfut" onclick="mp.trigger('givehair', 6)"> <img src="images/rash.png" width="50" height="35"><p id="maskfut">Парик</p></div>
+                        <div class="maskfut" onclick="mp.trigger('givehair', 7)"> <img src="images/rash.png" width="50" height="35"><p id="maskfut">Рельеф</p></div>
+                        <div class="maskfut" onclick="mp.trigger('givehair', 8)"> <img src="images/rash.png" width="50" height="35"><p id="maskfut">Репер</p></div>
+                        <div class="maskfut" onclick="mp.trigger('givehair', 9)"> <img src="images/rash.png" width="50" height="35"><p id="maskfut">Простая</p></div>
+                        <div class="maskfut" onclick="mp.trigger('givehair', 10)"> <img src="images/rash.png" width="50" height="35"><p id="maskfut">На бок</p></div>
+                        <div class="maskfut" onclick="mp.trigger('givehair', 11)"> <img src="images/rash.png" width="50" height="35"><p id="maskfut">Упругая стрижка</p></div>
+                        <div class="maskfut" onclick="mp.trigger('givehair', 12)"> <img src="images/rash.png" width="50" height="35"><p id="maskfut">Лохматый</p></div>
+                        <div class="maskfut" onclick="mp.trigger('givehair', 13)"> <img src="images/rash.png" width="50" height="35"><p id="maskfut">Нефор</p></div>
+                        <div class="maskfut" onclick="mp.trigger('givehair', 14)"> <img src="images/rash.png" width="50" height="35"><p id="maskfut">Простая 2</p></div>
+
+
+                    </div></div></div></div></div></div>
+    <div class="backgroundtwo">
+        <div class="osnovatwo">
+            <div class="fut" id="fut" style="display: none;" >
+                <div class="skroll">
+                    <div class="skrolltwo">
+                    <div class="futbolki">
+                        <div class="all">Выберите футболку</div>
+                        <div class="backfut" onclick="mp.trigger('giveclothes', 1)"> <img src="images/clothes.png" width="50" height="35"><p id="backfuttext">Футболка</p></div>
+                        <div class="backfutt" onclick="mp.trigger('giveclothes', 2)"><img src="images/clothes.png" width="50" height="35"><p id="backfuttextt">Объемная футболка</p></div>
+                        <div class="backfuttt" onclick="mp.trigger('giveclothes', 3)"><img src="images/clothes.png" width="50" height="35"><p id="backfuttexttt">Летняя футболка</p></div>
+                        <div class="backfutttt" onclick="mp.trigger('giveclothes', 4)"><img src="images/clothes.png" width="50" height="35"><p id="backfuttextttt">Футболка оверсайза</p></div>
+                        <div class="backfuttttt" onclick="mp.trigger('giveclothes', 5)"><img src="images/clothes.png" width="50" height="35"><p id="backfuttexttttt">Светлая футболка</p></div>
+                        <div class="backfutttttt" onclick="mp.trigger('giveclothes', 6)"><img src="images/clothes.png" width="50" height="35"><p id="backfuttextttttt">Лонгслив</p></div>
+
+                    </div></div></div></div></div></div>
+                    <div class="backgroundthree">
+                        <div class="osnovathree">
+                            <div class="tol" id="tol" style="display: none;">
+                                <div class="skroll">
+                                    <div class="skrolltwo">
+                                    <div class="tolstovki">
+                                    <div class="tollist">Выберите толстовку</div>
+                                    <div class="backtol" onclick="mp.trigger('giveclothes', 7); mp.trigger('giveUndershirts')"> <img src="images/coft.png" width="50" height="35"><p id="backtol">Толстовка</p></div>
+                                    <div class="backtoll" onclick="mp.trigger('giveclothes', 8)"><img src="images/coft.png" width="50" height="35"><p id="backtoll">Толстовка даймонд</p></div>
+                                    <div class="backtolll" onclick="mp.trigger('giveclothes', 9)"><img src="images/coft.png" width="50" height="35"><p id="backtolll">Длинная кофта бургер</p></div>
+                                    <div class="backtollll" onclick="mp.trigger('giveclothes', 10)"><img src="images/coft.png" width="50" height="35"><p id="backtollll">Двухтипная толстовка</p></div>
+                                    <div class="backtolllll" onclick="mp.trigger('giveclothes', 11)"><img src="images/coft.png" width="50" height="35"><p id="backtolllll">Разноцветная толстовка</p></div>
+                            </div></div></div></div></div></div>
+
+                            <div class="backgroundtthet">
+                                <div class="osnovather">
+                                    <div class="shtan" id="shtan" style="display: none;" >
+                                        <div class="skroll">
+                                            <div class="skrolltwo">
+                                            <div class="shtani">
+                                            <div class="shanlist">Выберите низ</div>
+                                            <div class="niz" onclick="mp.trigger('giveclothes', 12)"> <img src="images/shirt.png" width="50" height="35"><p id="niz">Штаны</p></div>
+                                            <div class="nizz" onclick="mp.trigger('giveclothes', 13)"><img src="images/shirt.png" width="50" height="35"><p id="nizz">Спортивные штаны</p></div>
+                                            <div class="nizzz" onclick="mp.trigger('giveclothes', 14)"><img src="images/shirt.png" width="50" height="35"><p id="nizzz">Штаны с черепами</p></div>
+                                            <div class="nizzzz" onclick="mp.trigger('giveclothes', 15)"><img src="images/shirt.png" width="50" height="35"><p id="nizzzz">Большие штаны</p></div>
+                                            <div class="nizzzzz" onclick="mp.trigger('giveclothes', 16)"><img src="images/shirt.png" width="50" height="35"><p id="nizzzzz">Штаны с узорами</p></div>
+                                            <div class="nizzzzzz" onclick="mp.trigger('giveclothes', 17)"><img src="images/shirt.png" width="50" height="35"><p id="nizzzzzz">Штаны бойца</p></div>
+                                            <div class="nizzzzzzz" onclick="mp.trigger('giveclothes', 18)"><img src="images/shirt.png" width="50" height="35"><p id="nizzzzzzz">Штаны спортивные 2</p></div>
+                                            <div class="nizzzzzzzz" onclick="mp.trigger('giveclothes', 19)"><img src="images/shirt.png" width="50" height="35"><p id="nizzzzzzzz">Блатные штаны</p></div>
+                                            <div class="nizzzzzzzzz" onclick="mp.trigger('giveclothes', 20)"><img src="images/shirt.png" width="50" height="35"><p id="nizzzzzzzzz">Шорты</p></div>
+                                            <div class="nizzzzzzzzz" onclick="mp.trigger('giveclothes', 41)"><img src="images/shirt.png" width="50" height="35"><p id="nizzzzzzzzz">Трусы</p></div>
+
+                                    </div></div></div></div></div></div>
+
+                                    <div class="backgroundxz">
+                                        <div class="osnovaxz">
+                                            <div class="boot" id="boot" style="display: none;" >
+                                                <div class="skroll">
+                                                    <div class="skrolltwo">
+                                                    <div class="bootsi">
+                                                    <div class="bootsilist">Выберите обувь</div>
+                                                    <div class="niz" onclick="mp.trigger('giveclothes', 29)"> <img src="images/boots.png" width="50" height="35"><p id="niz">Без обуви</p></div>
+                                                    <div class="nizz" onclick="mp.trigger('giveclothes', 30)"><img src="images/boots.png" width="50" height="35"><p id="nizz">Кеды</p></div>
+                                                    <div class="nizzz" onclick="mp.trigger('giveclothes', 31)"><img src="images/boots.png" width="50" height="35"><p id="nizzz">Шлепки</p></div>
+                                                    <div class="nizzzz" onclick="mp.trigger('giveclothes', 32)"><img src="images/boots.png" width="50" height="35"><p id="nizzzz">Вот это тяги!</p></div>
+                                                    <div class="nizzzz" onclick="mp.trigger('giveclothes', 42)"><img src="images/boots.png" width="50" height="35"><p id="nizzzz">Высокие кроссовки</p></div>
+                                                    <div class="nizzzz" onclick="mp.trigger('giveclothes', 43)"><img src="images/boots.png" width="50" height="35"><p id="nizzzz">Ласты</p></div>
+                                                    <div class="nizzzz" onclick="mp.trigger('giveclothes', 44)"><img src="images/boots.png" width="50" height="35"><p id="nizzzz">Стильные кроссовки</p></div>
+        
+                                            </div></div></div></div></div></div>
+    <div class="background">
+        <div class="osnova">
+            <div class="clothes"><p>Список услуг</p></div>
+                <div class="masks" id="masks"><p>Прически</p></div>
+                    <!-- <div class="Tops" id="Tops"><p>Футболки</p></div>
+                        <div class="Coft" id="Coft"><p>Толстовки</p></div>
+                            <div class="shirt" id="shirt"><p>Штаны & шорты</p></div>
+                                    <div class="boots" id="boots"><p>Обувь</p></div>
+                                        <div class="acs"><p>Акксесуары</p></div></div></div> -->
+                                    <div class="bacgclose">
+                                <div class="osnovaclose">
+                            <div class="close" onclick="mp.trigger('c:leaveBarber')"><img src="images/close.png" width="300" height="35"></div></div></div>
+
+</body>
+<script src="script.js"></script>
+</html>

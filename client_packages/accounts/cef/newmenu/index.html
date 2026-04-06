@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/rubik-glitch" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">             
+    <title>New MainMenu by Colt DM</title>
+</head>
+<body>
+    <div class="container">
+        <div class="containerBack">
+         <div class="back">C</div>
+        </div>
+         <div class="playIs">
+            <div class="displayPlay" style="display: none;">
+            <div class="fracImg"><img src="images/fam.png"></div>
+            <div class="fracImg"><img src="images/ballas.png"></div>
+            <div class="fracImg"><img src="images/vagos.png"></div>
+            <div class="fracImg"><img src="images/bloods.png"></div>
+            <div class="fracImg"><img src="images/mara.png"></div>
+            <div class="fracImg"><img src="images/fbi.png"></div>
+            </div>
+         </div>
+         <div class="donateIs" style="display: none;">
+            <div class="donateImg">VIP Статусы<img src="images/vips.png"></div>
+            <div class="donateImg">Машины<img src="images/cars.png"></div>
+            <div class="donateImg">Одежда<img src="images/clothes.png"></div>
+         </div>
+        <div class="clicks">
+            <div class="linear"></div>
+            <div class="play">Играть</div>
+            <div class="donate">Донат</div>
+            <div class="cases">Кейсы</div>
+            <div class="settings">Настройки</div>
+        </div>
+    </div>
+</body>
+<script>
+    const displayPlay = document.querySelector('.displayPlay');
+    const donateIs = document.querySelector('.donateIs');
+    const clickPlay = document.querySelector('.play');
+    const clickDonate = document.querySelector('.donate');
+    displayPlay.style.display = 'block';
+
+        clickPlay.addEventListener('click', () => {
+            displayPlay.style.display = 'block';
+            donateIs.style.display = 'none';
+        });
+        clickDonate.addEventListener('click', () => {
+            clickDonate.style.display = 'block';
+            displayPlay.style.display = 'none';
+        });
+</script>
+</html>

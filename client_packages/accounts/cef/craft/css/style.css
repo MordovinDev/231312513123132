@@ -1,0 +1,264 @@
+.backgound{
+    position:absolute;
+    user-select:none;
+    background-attachment: fixed;
+}
+
+
+.osnova {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.backgound{
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+
+.create{
+    /* margin-top: 300px;
+    margin-right: 100px; */
+    font-family: "Rubik";
+    line-height: 1;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #202024;
+    border: 1.5px solid rgb(116, 116, 116);
+    width: 659px;
+    height: 408px;
+    white-space: nowrap;
+}
+
+.all{
+    font-size: 25px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    padding-top: 15px;
+    padding-left: 36px;
+    opacity: 0.55;
+}
+
+.linear{
+    background-color: #ffffff;
+    opacity: 0.3;
+    width: 595px;
+    height: 1px;
+    margin-top: 5px;
+    margin-left: 36px;
+}
+
+.playerResources{
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    padding-top: 5px;
+    padding-left: 36px;
+    opacity: 0.55;
+}
+
+.craftItems{
+    font-size: 12px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    padding-top: 9px;
+    padding-left: 487px;
+    opacity: 0.55;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #947373;
+  }
+
+  /* Применение стилей */
+  .item {
+    overflow-y: scroll;
+}
+
+
+
+.skroll{
+    overflow-y: hidden;
+}
+
+.skrolltwo{
+    overflow-y: scroll; height: 302px;
+}
+
+.skrolltwo::-webkit-scrollbar-thumb{
+    background-color: #dfdfdf;
+    border-radius: 20px;
+}
+
+.skrolltwo::-webkit-scrollbar-track{
+    background-color:#929292;
+    border-radius: 20px;
+    opacity: 0.55;
+}
+
+
+.backgrounditem{
+    margin-top: 14px;
+    margin-left: 478px;
+    z-index: 7;
+    font-family: "Rubik";
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 15px;
+    background-color: #525252;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 163px;
+    height: 65px;
+    display: flex;
+}
+
+
+.backgrounditem img {
+    margin-top: 6px;
+    margin-left: 19px;
+}
+
+
+#itemtext{
+    /* margin-top: 40px;
+    margin-left: -100px; */
+    text-align: center;
+}
+
+
+
+#itemMarksmantext{
+    margin-top: -5px;
+    text-align: center;
+}
+
+
+#itemMarksmanPistoltext{
+    margin-top: 45px;
+    margin-left: -115px;
+}
+
+#itemHeavySniperMK2Text{
+    margin-top: 45px;
+    margin-left: -145px;
+}
+
+#backgrounditemHevik img {
+    /* margin-top: -10px; */
+    margin-left: 10px;
+}
+
+#ownedcraftMusket{
+    position: absolute;
+}
+
+.craftMusket{
+    margin-left: 83px;
+    margin-top: -282px;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.Inerfulshions{
+    margin-top: 13px;
+    margin-left: 110px;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+.CraftMusketCLIENT{
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 70px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Rubik';
+    line-height: 1;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #2D2D33;
+    border-radius: 8px;
+    width: 162px;
+    padding: 0.5px;
+    transition: 0.3s linear;
+}
+
+.CraftMusketCLIENT:hover{
+    color: #2D2D33;
+    background-color: #ffffff;
+}
+
+
+
+
+.craftBackground {
+    width: 300px;
+    height: 30px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+  }
+  .craftLine {
+    height: 100%;
+    background-color: #979597;
+    width: 0;
+    position: absolute;
+    transition: width 5s linear;
+  }
+  .craftTimer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+
+.newbackroung{
+    opacity: 0.5;
+    position: absolute;
+    background-color: #000000;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.craftBackground{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}

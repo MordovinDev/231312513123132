@@ -1,0 +1,1757 @@
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+  
+  left: 0;
+  top:0;
+  margin: 0;
+  padding: 0;
+
+  background: url('./images/background.png');
+
+  font-family: 'Rubik';
+}
+
+* {
+  user-select: none;
+}
+
+#MainInterface {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 100%;
+  height: 100%;
+
+  header {
+
+    background: #1D1F2E;
+    border: 1px solid rgba(255,255,255, 0.17);
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 0 40px;
+
+      .left {
+        display: flex;
+        flex-direction: row;
+
+        gap: 80px;
+
+        .element {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+
+          span {
+            font-weight: 700;
+            font-size: 14px;
+
+            color: rgba(255,255,255, 0.6);
+          }
+
+          .button {
+            padding: 6px 10px;
+
+            background: rgba(255,255,255, 0.15);
+            border: 2px solid rgba(255,255,255, 0.19);
+            border-radius: 6px;
+          }
+
+          .icon {
+            background: #252839;
+            border: 1px solid rgba(255,255,255, 0.17);
+
+            padding: 1px 4px;
+            border-radius: 6px;
+            img {
+              width: 22px;
+              height: 100%;
+            }
+          }
+
+          .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        gap: 30px;
+
+        button {
+          background: transparent;
+          border: none;
+          outline: none;
+
+          margin-bottom: 15px;
+          color: rgb(255,255,255, 0.75);
+
+          font-weight: 700;
+          font-size: 16px;
+        }
+
+
+        .element {
+          padding: 15px 40px;
+          background: #272A3A;
+          border: 1px solid rgba(255,255,255, 0.17);
+  
+          color: rgb(255,255,255, 0.75);
+          font-size: 32px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  main {
+    width: 100%;
+    height: 100%;
+
+    .container {
+      padding: 0 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+      gap: 20px;
+
+      .profile {
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+
+        padding: 20px;
+
+        background: #212230;
+        border: 1px solid rgba(255,255,255, 0.17);
+        border-radius: 6px;
+
+        width: auto;
+
+        .icon {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .img {
+            padding: 3px 5px;
+            background: #252839;
+            border: 1px solid rgba(255,255,255, 0.17);
+            border-radius: 4px;
+
+            img {
+              width: 45px;
+              height: auto;
+            }
+          }
+
+          .info {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            align-items: center;
+
+            font-weight: 700;
+            font-size: 18px;
+            color: rgba(255,255,255, 0.75);
+
+            line-height: 1.1;
+          }
+        }
+
+        .element {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          padding: 5px 2px;
+
+          background: #252839;
+          border: 1px solid rgba(255,255,255, 0.17);
+          border-radius: 2px;
+
+          span {
+            font-weight: 700;
+            font-size: 18px;
+            color: rgba(255,255,255, 0.75);
+          }
+        }
+      }
+
+      .rouletteMain {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        width: 70%;
+        height: auto;
+
+        position: relative;
+
+        .slider {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          background: #20212E;
+          border: 1px solid rgba(255,255,255, 0.17);
+          border-radius: 8px;
+
+          width: auto;
+          height: auto;
+
+          .container-2 {
+            padding: 20px;
+
+            display: flex;
+            justify-content: end;
+
+            width: auto;
+            height: auto;
+
+              #container-wrapper{
+                width:100%;
+                height:100px;
+                overflow: hidden;
+
+                margin: 20px auto;
+                
+                position: relative;
+                z-index: 1;
+
+                display: block;
+            
+                .slider-wrapper {
+                  width:400000px;
+                  height:100%;
+                  
+                  overflow: hidden;
+                  display:flex;
+                  flex-direction: row;
+                  align-items: center;
+
+                  position: relative;
+                  right:0px;
+
+                  z-index: 0;
+
+                  .swiper-slide{
+                    width:100px;
+                    
+                    height:80%;
+                    overflow: hidden;
+
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    border-right: 1px solid rgba(255,255,255, 0.17);
+    
+                    img {
+                      width: 40px;
+                      height: 40px;
+                    }
+    
+                    span{
+                      width:auto;
+                      color:white;
+                      font-size: 16px;
+                    }
+                  } 
+                }
+                .middle {
+                  width:2px;
+                  height:100%;
+                  background: rgb(155, 96, 2);
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+
+                  box-shadow: 0px 0px 5px 1px  black;
+
+                  color: #FFF;
+                  z-index: 2;
+                }
+                
+                .overlay {
+                  width:100%;
+                  height:100%;
+                  background: transparent;
+                  display:flex;
+                }
+              }
+
+            #makeBet {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              right: 0;
+              width: fit-content;
+
+              background: rgba(37, 40, 57, 0.75);
+              border: 1px solid rgba(255,255,255, 0.17);
+              border-radius: 6px;
+
+              span {
+                font-weight: 700;
+                font-size: 20px;
+                color: rgba(255,255,255, 0.75);
+
+                padding: 15px 40px;
+              }
+            }
+          }
+        }
+
+        #textToStart {
+          width: 100%;
+          height: auto;
+
+          background: #20212E;
+          border: 1px solid rgba(255,255,255, 0.17);
+          border-radius: 8px;
+
+          .container-2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            gap: 15px;
+
+            padding: 20px 15px;
+
+            .icon {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              background: #252839;
+              border: 1px solid rgba(255,255,255, 0.17);
+
+              padding: 0px 20px;
+
+              span {
+                font-family: 'Oswald';
+
+                font-weight: 700;
+                color: rgba(255,255,255, 0.75);
+                font-size: 28px;
+              }
+            }
+
+            .text {
+              font-weight: 700;
+              font-size: 18px;
+              color: rgba(255,255,255, 0.75);
+
+              #timerToStart {
+                color: orange;
+              }
+            }
+          }
+        }
+
+        #playerBets {
+          width: 100%;
+          height: auto;
+
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          max-height: 500px;
+          overflow-y: auto;
+          overflow-x: hidden;
+
+          .element {
+            width: 100%;
+            height: auto;
+
+            background: #20212E;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255, 0.17);
+
+            .container-2 {
+              padding: 10px;
+
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+
+              overflow-y: hidden;
+
+              gap: 5px;
+
+              .icon {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 4px;
+
+                width: auto;
+                height: auto;
+
+                .img {
+                  padding: 5px 5px;
+                  background: #252839;
+                  border: 1px solid rgba(255,255,255, 0.17);
+
+                  width: 32px;
+                  height: auto;
+                  img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+
+                .name {
+                  font-weight: 700;
+                  font-size: 16px;
+                  color: rgba(255,255,255, 0.75);
+                }
+              }
+
+              .bet {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 15px;
+
+                flex-wrap: wrap;
+
+                span {
+                  text-align: center;
+                  font-weight: 700;
+                  font-size: 14px;
+                  color: rgba(255,255,255, 0.75);
+                }
+
+                .weapon {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 2px;
+
+                  img {
+                    width: 120px;
+                    height: auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        #playerBets::-webkit-scrollbar {
+          height: 5px;
+          width: 3px;
+          background: transparent;
+        }
+        #playerBets::-webkit-scrollbar-track {
+          border-radius: 3px;
+          background-color: transparent;
+        }
+        
+        #playerBets::-webkit-scrollbar-track:hover {
+          background-color: #6E2DC2;
+        }
+        
+        #playerBets::-webkit-scrollbar-track:active {
+          background-color: #8A53C2;
+        }
+        
+        #playerBets::-webkit-scrollbar-thumb {
+          border-radius: 6px;
+          background-color: #8A53C2;
+        }
+        
+        #playerBets::-webkit-scrollbar-thumb:hover {
+          background-color: transparent;
+        }
+        
+        #playerBets::-webkit-scrollbar-thumb:active {
+          background-color: transparent;
+        }
+      }
+
+      #betInterface {
+        background: #20212E;
+        border: 1px solid rgba(255,255,255, 0.17);
+        border-radius: 8px;
+
+        width: 100%;
+        height: auto;
+
+        .container-2 {
+          padding: 20px;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 30px;
+
+          width: 100%;
+          height: auto;
+
+          #betInterfaceItems {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            height: auto;
+
+            .title {
+              font-weight: 700;
+              font-size: 18px;
+              color: rgba(255,255,255, 0.75);
+            }
+
+            .items {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              flex-wrap: wrap;
+              gap: 15px;
+              row-gap: 15px;
+
+              max-height: 400px;
+
+              overflow-x: hidden;
+              overflow-y: auto;
+
+              .element {
+                background: #252839;
+                border: 1px solid rgba(255,255,255, 0.17);
+                border-radius: 8px;
+
+                width: fit-content;
+                height: auto;
+                
+                .container-3 {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 5px;
+
+                  position: relative;
+
+                  padding: 8px;
+                  img {
+                    width: 100px;
+                    height: auto;
+                  }
+
+                  span {
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: rgba(255,255,255, 0.75);
+                  }
+
+                  .active {
+                    position: absolute;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    width: fit-content;
+                    height: fit-content;
+
+                    pointer-events: none;
+
+                    top: 0;
+                    right: 0;
+
+                    svg {
+                      width: 24px;
+                      height: 24px;
+                    }
+                  }
+
+                  .mark {
+                    position: absolute;
+                  }
+                }
+              }
+            }
+
+            .items::-webkit-scrollbar {
+              height: 5px;
+              width: 3px;
+              background: transparent;
+            }
+            .items::-webkit-scrollbar-track {
+              border-radius: 3px;
+              background-color: transparent;
+            }
+            
+            .items::-webkit-scrollbar-track:hover {
+              background-color: #6E2DC2;
+            }
+            
+            .items::-webkit-scrollbar-track:active {
+              background-color: #8A53C2;
+            }
+            
+            .items::-webkit-scrollbar-thumb {
+              border-radius: 6px;
+              background-color: #8A53C2;
+            }
+            
+            .items::-webkit-scrollbar-thumb:hover {
+              background-color: transparent;
+            }
+            
+            .items::-webkit-scrollbar-thumb:active {
+              background-color: transparent;
+            }
+          }
+
+          .buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+
+            width: 100%;
+
+            input {
+              outline: none;
+              border: 1px solid rgba(255,255,255, 0.17);
+              background: #252839;
+
+              font-size: 16px;
+              font-weight: 700;
+              color: rgba(255,255,255, 0.75);
+
+              box-sizing: border-box;
+
+              padding: 12px 10px;
+            }
+
+            button {
+              background: #252839;
+              outline: none;
+              border: 1px solid rgba(255,255,255, 0.17);
+
+              font-size: 16px;
+              font-weight: 700;
+              color: rgba(255,255,255, 0.75);
+              padding: 15px;
+            }
+          }
+        }
+      }
+
+      #winnedItemsInterface {
+        background: #20212E;
+        border: 1px solid rgba(255,255,255, 0.17);
+        border-radius: 8px;
+
+        width: 100%;
+        height: auto;
+
+        .container-2 {
+          padding: 20px;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 30px;
+
+          width: 100%;
+          height: auto;
+
+          .title {
+            font-weight: 700;
+            font-size: 18px;
+            color: rgba(255,255,255, 0.75);
+          }
+
+          .items {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            row-gap: 15px;
+
+            max-height: 400px;
+
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            .element {
+              background: #252839;
+              border: 1px solid rgba(255,255,255, 0.17);
+              border-radius: 8px;
+
+              width: auto;
+              height: auto;
+                
+              .container-3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+
+                position: relative;
+
+                padding: 8px;
+                img {
+                  width: 120px;
+                  height: auto;
+                }
+
+                span {
+                  font-weight: 700;
+                  font-size: 14px;
+                  color: #44ff00;
+                }
+              }
+            }
+            .items::-webkit-scrollbar {
+              height: 5px;
+              width: 3px;
+              background: transparent;
+            }
+            .items::-webkit-scrollbar-track {
+              border-radius: 3px;
+              background-color: transparent;
+            }
+            
+            .items::-webkit-scrollbar-track:hover {
+              background-color: #6E2DC2;
+            }
+            
+            .items::-webkit-scrollbar-track:active {
+              background-color: #8A53C2;
+            }
+            
+            .items::-webkit-scrollbar-thumb {
+              border-radius: 6px;
+              background-color: #8A53C2;
+            }
+            
+            .items::-webkit-scrollbar-thumb:hover {
+              background-color: transparent;
+            }
+            
+            .items::-webkit-scrollbar-thumb:active {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+
+      .rouletteText {
+        width: fit-content;
+        height: auto;
+
+        background: #212230;
+        border: 1px solid rgba(255,255,255, 0.17);
+        border-radius: 6px;
+
+        .container-2 {
+          padding: 10px 40px 10px 10px;
+
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 20px;
+
+          .icon {
+            background: #222333;
+            border: 1px solid rgba(255,255,255, 0.17);
+            border-radius: 4px;
+
+            padding: 5px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+              width: 40px;
+              height: auto;
+            }
+          }
+
+          .text {
+            font-weight: 700;
+            font-size: 24px;
+            color: rgba(255,255,255, 0.75);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1000px) {
+  #MainInterface {
+    gap: 10px;
+
+    header {
+      .container {
+        padding: 0 20px;
+
+        .left {
+          gap: 40px;
+          
+          .element {
+            gap: 2.5px;
+
+            span {
+              font-size: 10px;
+            }
+
+            button {
+              padding: 3px 5px;
+
+              border: 1px solid rgba(255,255,255, 0.17);
+              border-radius: 3px;
+
+              font-size: 12px;
+            }
+
+            .icon {
+              padding: 1px 2px;
+              border-radius: 4px;
+
+              img {
+                width: 16px;
+              }
+            }
+
+          }
+        }
+
+        .right {
+          gap: 15px;
+
+          button {
+            margin-bottom: 7.5px;
+
+            font-size: 12px;
+          }
+
+          .element {
+            padding: 7.5px 20px;
+
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    main {
+      .container {
+        padding: 0 40px;
+        gap: 10px;
+
+        .profile {
+          gap: 15px;
+          padding: 10px;
+
+          .icon {
+            .img {
+              padding: 1.5px 2.5px;
+
+              img {
+                width: 25px;
+              }
+            }
+
+            .info {
+              font-size: 12px;
+            }
+          }
+
+          .element {
+            padding: 2.5px 2px;
+
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+
+        .rouletteMain {
+          gap: 10px;
+
+          width: 70%;
+
+          .slider {
+            gap: 5px;
+
+            .container-2 {
+              padding: 10px;
+
+              #container-wrapper {
+                height: 60px;
+                .slider-wrapper {
+                  .swiper-slide {
+                    img {
+                      width: 30px;
+                      height: 30px;
+                    }
+  
+                    span {
+                      font-size: 5px;
+                    }
+                  }
+                }
+              }
+
+              #makeBet {
+                border-radius: 4px;
+
+                span {
+                  font-size: 14px;
+
+                  padding: 7.5px 20px;
+                }
+              }
+            }
+          }
+
+          #textToStart {
+            border-radius: 6px;
+
+            .container-2 {
+              gap: 7.5px;
+
+              padding: 10px 7.5px;
+
+              .icon {
+                padding: 0 10px;
+
+                span {
+                  font-size: 16px;
+                }
+              }
+
+              .text {
+                font-size: 14px;
+              }
+            }
+          }
+
+          #playerBets {
+            gap: 5px;
+            max-height: 250px;
+
+            .element {
+              border-radius: 8px;
+
+              .container-2 {
+                padding: 5px;
+                gap: 2.5px;
+
+                .icon {
+                  gap: 2px;
+
+                  .img {
+                    padding: 2.5px;
+
+                    width: 20px;
+                  }
+
+                  .name {
+                    font-size: 12px;
+                  }
+                }
+
+                .bet {
+                  gap: 7.5px;
+
+
+                  span {
+                    font-size: 10px;
+                  }
+
+                  .weapon {
+                    img {
+                      width: 60px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          #betInterface {
+            .container-2 {
+              padding: 10px;
+              gap: 15px;
+
+              #betInterfaceItems {
+                gap: 7.5px;
+
+                .title {
+                  font-size: 14px;
+                }
+
+                .items {
+                  gap: 7.5px;
+                  row-gap: 7.5px;
+
+                  max-height: 200px;
+
+                  .element {
+                    border-radius: 6px;
+
+                    .container-3 {
+                      gap: 2.5px;
+
+                      padding: 4px;
+
+                      img {
+                        width: 50px;
+                      }
+
+                      span {
+                        font-size: 10px;
+                      }
+
+                      .active {
+                        svg {
+                          width: 16px;
+                          height: 16px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .buttons {
+                input {
+                  font-size: 12px;
+
+                  padding: 6px 5px;
+                }
+
+                button {
+                  font-size: 12px;
+                  padding: 7.5px;
+                }
+              }
+            }
+          }
+
+          #winnedItemsInterface {
+            border-radius: 6px;
+
+            .container-2 {
+              padding: 10px;
+              gap: 15px;
+
+              .title {
+                font-size: 14px;
+              }
+
+              .items {
+                gap: 7.5px;
+                row-gap: 7.5px;
+
+                max-height: 200px;
+
+                .element {
+                  border-radius: 6px;
+
+                  .container-3 {
+                    gap: 2.5px;
+                    padding: 4px;
+
+                    img {
+                      width: 60px;
+                    }
+
+                    span {
+                      font-size: 10px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .rouletteText {
+          border-radius: 3px;
+
+          .container-2 {
+            padding: 5px 20px 5px 5px;
+
+            gap: 10px;
+
+            .icon {
+              padding: 2.5px;
+
+              svg {
+                width: 20px;
+              }
+            }
+
+            .text {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 1000px) and (max-width: 1500px) {
+  #MainInterface {
+    gap: 15px;
+
+    header {
+      .container {
+        padding: 0 30px;
+
+        .left {
+          gap: 60px;
+          
+          .element {
+            gap: 3.75px;
+
+            span {
+              font-size: 12px;
+            }
+
+            button {
+              padding: 4px 8px;
+
+              border: 1px solid rgba(255,255,255, 0.17);
+              border-radius: 3px;
+
+              font-size: 12px;
+            }
+
+            .icon {
+              padding: 1px 3px;
+              border-radius: 4px;
+
+              img {
+                width: 20px;
+              }
+              
+            }
+
+          }
+        }
+
+        .right {
+          gap: 20px;
+
+          button {
+            margin-bottom: 10px;
+
+            font-size: 14px;
+          }
+
+          .element {
+            padding: 10px 25px;
+
+            font-size: 22px;
+          }
+        }
+      }
+    }
+
+    main {
+      .container {
+        padding: 0 50px;
+        gap: 15px;
+
+        .profile {
+          gap: 20px;
+          padding: 15px;
+
+          .icon {
+            .img {
+              padding: 1.5px 2.5px;
+
+              img {
+                width: 35px;
+              }
+            }
+
+            .info {
+              font-size: 14px;
+            }
+          }
+
+          .element {
+            padding: 4px 5px;
+
+            span {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .rouletteMain {
+          gap: 15px;
+
+          width: 70%;
+
+          .slider {
+            gap: 7.5px;
+
+            .container-2 {
+              padding: 15px;
+
+              #container-wrapper {
+                height: 80px;
+                .slider-wrapper {
+                  .swiper-slide {
+                    img {
+                      width: 35px;
+                      height: 35px;
+                    }
+  
+                    span {
+                      font-size: 9px;
+                    }
+                  }
+                }
+              }
+
+              #makeBet {
+                border-radius: 6px;
+
+                span {
+                  font-size: 16px;
+
+                  padding: 10px 25px;
+                }
+              }
+            }
+          }
+
+          #textToStart {
+            border-radius: 8px;
+
+            .container-2 {
+              gap: 10px;
+
+              padding: 15px 10px;
+
+              .icon {
+                padding: 0 15px;
+
+                span {
+                  font-size: 18px;
+                }
+              }
+
+              .text {
+                font-size: 16px;
+              }
+            }
+          }
+
+          #playerBets {
+            gap: 7.5px;
+            max-height: 320px;
+
+            .element {
+              border-radius: 6px;
+
+              .container-2 {
+                padding: 8px;
+                gap: 5px;
+
+                .icon {
+                  gap: 4px;
+
+                  .img {
+                    padding: 5px;
+
+                    width: 30px;
+                  }
+
+                  .name {
+                    font-size: 14px;
+                  }
+                }
+
+                .bet {
+                  gap: 10px;
+
+
+                  span {
+                    font-size: 12px;
+                  }
+
+                  .weapon {
+                    img {
+                      width: 80px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          #betInterface {
+            .container-2 {
+              padding: 15px;
+              gap: 20px;
+
+              #betInterfaceItems {
+                gap: 10px;
+
+                .title {
+                  font-size: 16px;
+                }
+
+                .items {
+                  gap: 10px;
+                  row-gap: 10px;
+
+                  max-height: 250px;
+
+                  .element {
+                    border-radius: 8px;
+
+                    .container-3 {
+                      gap: 5px;
+
+                      padding: 8px;
+
+                      img {
+                        width: 70px;
+                      }
+
+                      span {
+                        font-size: 12px;
+                      }
+
+                      .active {
+                        svg {
+                          width: 20px;
+                          height: 20px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .buttons {
+                input {
+                  font-size: 14px;
+
+                  padding: 9px 8px;
+                }
+
+                button {
+                  font-size: 14px;
+                  padding: 10px;
+                }
+              }
+            }
+          }
+
+          #winnedItemsInterface {
+            border-radius: 6px;
+
+            .container-2 {
+              padding: 15px;
+              gap: 20px;
+
+              .title {
+                font-size: 16px;
+              }
+
+              .items {
+                gap: 10px;
+                row-gap: 10px;
+
+                max-height: 250px;
+
+                .element {
+                  border-radius: 8px;
+
+                  .container-3 {
+                    gap: 5px;
+                    padding: 8px;
+
+                    img {
+                      width: 70px;
+                    }
+
+                    span {
+                      font-size: 12px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .rouletteText {
+          border-radius: 5px;
+
+          .container-2 {
+            padding: 7.5px 30px 7.5px 7.5px;
+
+            gap: 15px;
+
+            .icon {
+              padding: 5px;
+
+              svg {
+                width: 28px;
+              }
+            }
+
+            .text {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 2501px) {
+  #MainInterface {
+    gap: 30px;
+
+    header {
+      .container {
+        padding: 0 60px;
+
+        .left {
+          gap: 80px;
+          
+          .element {
+            gap: 6px;
+
+            span {
+              font-size: 18px;
+            }
+
+            button {
+              padding: 8px 12px;
+
+              border: 1px solid rgba(255,255,255, 0.17);
+              border-radius: 6px;
+
+              font-size: 18px;
+            }
+
+            .icon {
+              padding: 2px 6px;
+              border-radius: 4px;
+
+              img {
+                width: 30px;
+              }
+              
+            }
+
+          }
+        }
+
+        .right {
+          gap: 40px;
+
+          button {
+            margin-bottom: 20px;
+
+            font-size: 20px;
+          }
+
+          .element {
+            padding: 20px 40px;
+
+            font-size: 32px;
+          }
+        }
+      }
+    }
+
+    main {
+      .container {
+        padding: 0 80px;
+        gap: 30px;
+
+        .profile {
+          gap: 40px;
+          padding: 25px;
+
+          .icon {
+            .img {
+              padding: 3px 5px;
+
+              img {
+                width: 50px;
+              }
+            }
+
+            .info {
+              font-size: 20px;
+            }
+          }
+
+          .element {
+            padding: 8px 10px;
+
+            span {
+              font-size: 20px;
+            }
+          }
+        }
+
+        .rouletteMain {
+          gap: 30px;
+
+          width: 70%;
+
+          .slider {
+            gap: 15px;
+
+            .container-2 {
+              padding: 30px;
+
+              #container-wrapper {
+                height: 120px;
+                .slider-wrapper {
+                  .swiper-slide {
+                    img {
+                      width: 50px;
+                      height: 50px;
+                    }
+  
+                    span {
+                      font-size: 12px;
+                    }
+                  }
+                }
+              }
+
+              #makeBet {
+                border-radius: 8px;
+
+                span {
+                  font-size: 20px;
+
+                  padding: 15px 35px;
+                }
+              }
+            }
+          }
+
+          #textToStart {
+            border-radius: 8px;
+
+            .container-2 {
+              gap: 20px;
+
+              padding: 25px 20px;
+
+              .icon {
+                padding: 0 25px;
+
+                span {
+                  font-size: 22px;
+                }
+              }
+
+              .text {
+                font-size: 20px;
+              }
+            }
+          }
+
+          #playerBets {
+            gap: 15px;
+            max-height: 450px;
+
+            .element {
+              border-radius: 8px;
+
+              .container-2 {
+                padding: 14px;
+                gap: 10px;
+
+                .icon {
+                  gap: 8px;
+
+                  .img {
+                    padding: 10px;
+
+                    width: 60px;
+                  }
+
+                  .name {
+                    font-size: 20px;
+                  }
+                }
+
+                .bet {
+                  gap: 20px;
+
+
+                  span {
+                    font-size: 18px;
+                  }
+
+                  .weapon {
+                    img {
+                      width: 120px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          #betInterface {
+            .container-2 {
+              padding: 25px;
+              gap: 40px;
+
+              #betInterfaceItems {
+                gap: 20px;
+
+                .title {
+                  font-size: 22px;
+                }
+
+                .items {
+                  gap: 20px;
+                  row-gap: 20px;
+
+                  max-height: 400px;
+
+                  .element {
+                    border-radius: 12px;
+
+                    .container-3 {
+                      gap: 10px;
+
+                      padding: 12px;
+
+                      img {
+                        width: 110px;
+                      }
+
+                      span {
+                        font-size: 18px;
+                      }
+
+                      .active {
+                        svg {
+                          width: 40px;
+                          height: 40px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              .buttons {
+                input {
+                  font-size: 20px;
+
+                  padding: 15px 14px;
+                }
+
+                button {
+                  font-size: 18px;
+                  padding: 20px;
+                }
+              }
+            }
+          }
+
+          #winnedItemsInterface {
+            border-radius: 8px;
+
+            .container-2 {
+              padding: 25px;
+              gap: 40px;
+
+              .title {
+                font-size: 22px;
+              }
+
+              .items {
+                gap: 20px;
+                row-gap: 20px;
+
+                max-height: 400px;
+
+                .element {
+                  border-radius: 12px;
+
+                  .container-3 {
+                    gap: 10px;
+                    padding: 14px;
+
+                    img {
+                      width: 110px;
+                    }
+
+                    span {
+                      font-size: 18px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .rouletteText {
+          border-radius: 8px;
+
+          .container-2 {
+            padding: 15px 50px 15px 15px;
+
+            gap: 30px;
+
+            .icon {
+              padding: 10px;
+
+              svg {
+                width: 40px;
+              }
+            }
+
+            .text {
+              font-size: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

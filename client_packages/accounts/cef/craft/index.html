@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="backgound">
+        <div class="osnova">
+            <div class="newbackroung" id="newbackroung" style="display:none;"></div>
+            <div class="create">
+                    <div class="craft">
+                        <div class="all">Верстак</div>
+                        <div class="linear"></div>
+                        <div class="playerResources" id="playerResources">Ваши ресурсы: 100</div>
+                        <div class="craftItems">Предметы для крафта</div>
+                        <div class="skroll">
+                            <div class="skrolltwo">
+                        <div class="backgrounditem" id="musketID"> <img src="images/musket.png" width="137" height="25"><p id="itemtext">Musket</p></div>
+                        <div class="backgrounditem" id="marksmanpistolID"> <img src="images/marksmanpistol.png" width="125" height="34"><p id="itemMarksmanPistoltext">Marksman Pistol</p></div>   
+                        <div class="backgrounditem" id="marksmanriflemk2ID"> <img src="images/marksmanriflemk2.png" width="144" height="36"><p id="itemMarksmantext">Marksman Rifle MK II</p></div>   
+                        <div class="backgrounditem" id="backgrounditemHevik"> <img src="images/hevikmk2.png" width="159" height="40"><p id="itemHeavySniperMK2Text">Heavy Sniper Mk II</p></div>   
+                    </div></div></div>
+            <div id="ownedcraftMusket" style="display: none;" >
+                    <div class="craftMusket">Крафт оружия "Musket"</div>
+                    <div class="Inerfulshions">Вам нужно:<br><br>1) 800 ресурсов<br>2) 125.000$</div>
+                    <div onclick="mp.trigger('craftItem', 1)" onclick="startCrafting()" class="CraftMusketCLIENT"><p>Скрафтить</p></div>
+            </div>
+        <div id="ownedCraftMarksmanPistol"  style="display: none;">
+            <div class="craftMusket">Крафт оружия "Marksman Pistol"</div>
+            <div class="Inerfulshions">Вам нужно:<br><br>1) 900 ресурсов<br>2) 150.000$</div>
+            <div onclick="mp.trigger('craftItem', 2)" onclick="startCrafting()" class="CraftMusketCLIENT"><p>Скрафтить</p></div>
+        </div>
+        <div id="ownedCraftMarksmanRifleMK2"  style="display: none;" >
+            <div class="craftMusket">Крафт оружия "Marksman Rifle MK II"</div>
+            <div class="Inerfulshions">Вам нужно:<br><br>1) 300 ресурсов<br>2) 50.000$</div>
+            <div onclick="mp.trigger('craftItem', 3)" onclick="startCrafting()" class="CraftMusketCLIENT" ><p>Скрафтить</p></div>
+        </div>
+        
+  
+  <div class="craftBackground" id="craftBackground" style="display:none;">
+    <div class="craftLine" id="craftLine"></div>
+    <div class="craftTimer" id="craftTimer">5</div>
+  </div>
+                </div></div></div>
+</body>
+<script>
+var isCrafting = false;
+
+function startCrafting() {
+  if (isCrafting) return;
+  isCrafting = true;
+
+  var line = document.getElementById('craftLine');
+  var timer = document.getElementById('craftTimer');
+  var background = document.getElementById('craftBackground');
+  var newbackroung = document.getElementById('newbackroung');
+  background.style.display = 'block';
+  newbackroung.style.display = 'block';
+  line.style.width = '0';
+  var timeLeft = 5;
+  timer.innerHTML = timeLeft.toString();
+
+  setTimeout(function() {
+    line.style.width = '100%';
+  }, 10); 
+
+  var interval = setInterval(function() {
+    timeLeft--;
+    timer.innerHTML = timeLeft.toString();
+    if (timeLeft <= 0) {
+      clearInterval(interval);
+      background.style.display = 'none';
+      newbackroung.style.display = 'none';
+      isCrafting = false; 
+    }
+  }, 1000);
+}
+        ownedcraftMusket.style.display = 'none';
+        musketID.style.display = 'block';
+
+        ownedCraftMarksmanRifleMK2.style.display = 'none';
+        marksmanriflemk2ID.style.display = 'block';
+    document.getElementById('musketID').addEventListener('click', function() {
+        var musketID = document.getElementById('musketID');
+        var marksmanriflemk2ID = document.getElementById('marksmanriflemk2ID');
+        var ownedcraftMusket = document.getElementById('ownedcraftMusket');
+        var ownedCraftMarksmanPistol = document.getElementById('ownedCraftMarksmanPistol');
+        var ownedCraftMarksmanRifleMK2 = document.getElementById('ownedCraftMarksmanRifleMK2');
+        if (ownedcraftMusket.style.display === 'block') {
+            ownedcraftMusket.style.display = 'none';
+            musketID.style.display = 'block';
+        } else {
+            ownedcraftMusket.style.display = 'block';
+            musketID.style.display = 'block';
+            ownedCraftMarksmanPistol.style.display = 'none';
+            ownedCraftMarksmanRifleMK2.style.display = 'none';
+        }
+    });
+    document.getElementById('marksmanpistolID').addEventListener('click', function() {
+    var musketID = document.getElementById('musketID');
+    var marksmanpistolID = document.getElementById('musketID');
+    var marksmanriflemk2ID = document.getElementById('marksmanriflemk2ID');
+    var ownedcraftMusket = document.getElementById('ownedcraftMusket');
+    var ownedCraftMarksmanPistol = document.getElementById('ownedCraftMarksmanPistol');
+    var ownedCraftMarksmanRifleMK2 = document.getElementById('ownedCraftMarksmanRifleMK2');
+    if (ownedCraftMarksmanPistol.style.display === 'block') {
+        ownedCraftMarksmanPistol.style.display = 'none';
+        marksmanpistolID.style.display = 'block';
+    } else {
+        ownedCraftMarksmanPistol.style.display = 'block';
+        marksmanpistolID.style.display = 'block';
+        ownedcraftMusket.style.display = 'none';
+        ownedCraftMarksmanRifleMK2.style.display = 'none';
+    }
+});
+document.getElementById('marksmanriflemk2ID').addEventListener('click', function() {
+    var musketID = document.getElementById('musketID');
+    var marksmanpistolID = document.getElementById('musketID');
+    var ownedcraftMusket = document.getElementById('ownedcraftMusket');
+    var marksmanriflemk2ID = document.getElementById('marksmanriflemk2ID');
+    var ownedCraftMarksmanPistol = document.getElementById('ownedCraftMarksmanPistol');
+    var ownedCraftMarksmanRifleMK2 = document.getElementById('ownedCraftMarksmanRifleMK2');
+    if (ownedCraftMarksmanRifleMK2.style.display === 'block') {
+        ownedCraftMarksmanRifleMK2.style.display = 'none';
+        marksmanriflemk2ID.style.display = 'block';
+        ownedCraftMarksmanRifleMK2.style.display = 'none';
+    } else {
+        ownedCraftMarksmanRifleMK2.style.display = 'block';
+        marksmanriflemk2ID.style.display = 'block';
+        ownedCraftMarksmanPistol.style.display = 'none';
+        ownedcraftMusket.style.display = 'none';
+    }
+});
+</script>
+<script>
+    window.playerInfoitemCraft = function(playerResources) {
+        document.querySelector('#playerResources').innerHTML = "Ваши ресурсы: " + playerResources;
+    }
+</script>
+</html>
+
+
+
+

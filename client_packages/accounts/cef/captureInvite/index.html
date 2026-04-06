@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="background">
+        <div class="info"><p>Капт</p></div>
+            <div class="join"><p>Принять участие - Y</p></div>
+                    <div id="timer">10 сек</div>
+
+                    <!-- <div class="info" onclick="mp.trigger('giveclothes', 3)"><p>Мероприятие "Снайперы"</p></div>
+                    <div class="join" onclick="mp.trigger('giveclothes', 1)"><p>Войти</p></div>
+                        <div class="close" onclick="mp.trigger('giveclothes', 2)" ><p>Закрыть</p></div>
+                        <div id="timer" onclick="mp.trigger('giveclothes', 4)">15 сек</div> -->
+</body>
+<script>
+var timeLeft = 10;
+
+function countdown() {
+    timeLeft--;
+    document.getElementById("timer").innerHTML = timeLeft + " сек";
+    if (timeLeft <= 0) {
+        clearInterval(interval);
+
+    }
+}
+
+var interval = setInterval(countdown, 1000);
+</script>
+</html>

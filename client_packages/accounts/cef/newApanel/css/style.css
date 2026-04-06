@@ -1,0 +1,579 @@
+.osnova, .back{
+    position:absolute;
+    user-select:none;
+    background-attachment: fixed;
+}
+
+.osnova {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+* {
+    overflow: hidden;
+}
+
+
+.back{
+    top: 50%;
+    left: 50%;
+    color: rgb(116, 116, 116);
+    font-family: "Rubik";
+    line-height: 1;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    background-color: #202024;
+    border: 1.5px solid rgb(116, 116, 116);
+    width: 1043px;
+    height: 611px;
+    white-space: nowrap;
+}
+
+
+
+
+
+.info{
+    margin-top: -30px;
+    color: rgb(85, 65, 65);
+    opacity: 0.65;
+    font-family: "Rubik";
+    line-height: 1;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.circle{
+    width: 972px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.35;
+    margin-top: 65px;
+    margin-left: 30px;
+}
+
+.eventsText{
+    position:absolute;
+    margin-left: 65px;
+    margin-top: -40px;
+    color: rgb(255, 255, 255);
+    opacity: 0.75;
+    font-family: "Rubik";
+    line-height: 1;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.3s linear;
+}
+.eventsText:hover {
+    color: #a938c5;
+}
+
+.commandsText{
+    position:absolute;
+    margin-left: 335px;
+    margin-top: -40px;
+    color: rgb(255, 255, 255);
+    opacity: 0.75;
+    font-family: "Rubik";
+    line-height: 1;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.3s linear;
+}
+.commandsText:hover {
+    color: #a938c5;
+}
+
+.funText{
+    position:absolute;
+    margin-left: 587px;
+    margin-top: -40px;
+    color: rgb(255, 255, 255);
+    opacity: 0.75;
+    font-family: "Rubik";
+    line-height: 1;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.3s linear;
+}
+.funText:hover {
+    color: #a938c5;
+}
+
+.reportText{
+    position:absolute;
+    margin-left: 833px;
+    margin-top: -40px;
+    color: rgb(255, 255, 255);
+    opacity: 0.75;
+    font-family: "Rubik";
+    line-height: 1;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.3s linear;
+}
+.reportText:hover {
+    color: #a938c5;
+}
+
+
+.text{
+    margin-left: 400px;
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+    opacity: 0.75;
+    font-family: "Rubik";
+    line-height: 1;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s linear;
+}
+.text:hover {
+    color: #a938c5;
+}
+
+.textFan{
+    margin-left: 400px;
+    padding-top: 20px;
+    color: rgb(255, 255, 255);
+    opacity: 0.75;
+    font-family: "Rubik";
+    line-height: 1;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s linear;
+}
+.textFan:hover {
+    color: #a938c5;
+}
+
+.xyeta{
+    right: 35px;
+    bottom: 120px;
+    position: absolute;
+    font-size: 25px;
+}
+
+
+#ownedCommand{
+    z-index: 7;
+    position: absolute;
+}
+
+
+.bcEvents{
+    width: 402px;
+    height: 228px;
+    margin-top: 40px;
+    margin-left: 50px;
+    background-color: #161616;
+    border-radius: 8px;
+    /* padding-bottom: 20px; */
+}
+.textEvents{
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 71px;
+    color: rgb(255, 255, 255);
+    font-family: "Rubik";
+    line-height: 1;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s linear;
+}
+
+.infoEvents{
+    position: absolute;
+    margin-top: -195px;
+    margin-left: 75px;
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.nekstLocationEvents{
+    position: absolute;
+    color: white;
+    font-family: "Rubik";
+    font-size: 13px;
+    margin-top: -80px;
+    margin-left: 70px;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #202020;
+    border: 1.5px solid rgb(116, 116, 116);
+    padding: 15px;
+    width: 200px;
+    transition: 0.3s linear;
+}
+
+.nekstLocationEvents:hover {
+    color: #ffffff;
+    background-color: #a938c5;
+}
+
+
+.locationEvents{
+    position: absolute;
+    margin-top: -140px;
+    margin-left: 75px;
+    color: white;
+    font-family: "Rubik";
+    line-height: 1;
+    font-weight: bold;
+    opacity: 0.45;
+}
+
+
+
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+}
+
+
+
+
+.inputxd input {
+    z-index: 7;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: -110px;
+    text-align: center;
+    width: 180px;
+    height: 20px;
+    background-color: #ffffff;
+    opacity: 0.55;
+    border-radius: 8px;
+    color: hsl(288, 6%, 16%);
+    font-family: 'Rubik';
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bcEventsNew{
+    width: 402px;
+    height: 228px;
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: #161616;
+    border-radius: 8px;
+}
+.bcEventsNeww{
+    width: 402px;
+    height: 228px;
+    margin-top: -230px;
+    margin-left: 500px;
+    background-color: #161616;
+    border-radius: 8px;
+}
+
+
+
+.textEventsNew{
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 71px;
+    color: rgb(255, 255, 255);
+    font-family: "Rubik";
+    line-height: 1;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s linear;
+}
+
+.infoEventsNew{
+    position: absolute;
+    margin-top: -195px;
+    margin-left: 75px;
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.CreateSetnew{
+    position: absolute;
+    color: white;
+    font-family: "Rubik";
+    font-size: 10px;
+    margin-top: -80px;
+    margin-left: 70px;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #202020;
+    border: 1.5px solid rgb(116, 116, 116);
+    padding: 5px;
+    width: 200px;
+    transition: 0.3s linear;
+}
+
+.CreateSetnew:hover {
+    color: #ffffff;
+    background-color: #a938c5;
+}
+
+
+.fggffgfg{
+    position: absolute;
+    margin-top: -140px;
+    margin-left: 75px;
+    color: white;
+    font-family: "Rubik";
+    line-height: 1;
+    font-weight: bold;
+    opacity: 0.45;
+}
+
+
+
+
+input[type="text"]::-webkit-inner-spin-button, 
+input[type="text"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+}
+
+.inputEventsNewText input {
+    z-index: 7;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: -110px;
+    text-align: center;
+    width: 180px;
+    height: 20px;
+    background-color: #ffffff;
+    opacity: 0.55;
+    border-radius: 8px;
+    color: hsl(288, 6%, 16%);
+    font-family: 'Rubik';
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+}
+
+
+
+
+
+.StartSetnew{
+    position: absolute;
+    color: white;
+    font-family: "Rubik";
+    font-size: 10px;
+    margin-top: -40px;
+    margin-left: 70px;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #202020;
+    border: 1.5px solid rgb(116, 116, 116);
+    padding: 10px;
+    width: 200px;
+    transition: 0.3s linear;
+}
+
+.StartSetnew:hover {
+    color: #ffffff;
+    background-color: #a938c5;
+}
+.CloseSetnew{
+    position: absolute;
+    color: white;
+    font-family: "Rubik";
+    font-size: 10px;
+    margin-top: -40px;
+    margin-left: 320px;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #202020;
+    border: 1.5px solid rgb(116, 116, 116);
+    padding: 10px;
+    width: 80px;
+    transition: 0.3s linear;
+}
+
+.CloseSetnew:hover {
+    color: #ffffff;
+    background-color: #a938c5;
+}
+
+
+.backgroundSearch{
+    width: 402px;
+    height: 228px;
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: #161616;
+    border-radius: 8px;
+}
+
+
+
+.textInfoSearch{
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 71px;
+    color: rgb(255, 255, 255);
+    font-family: "Rubik";
+    line-height: 1;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+.inputSearch input {
+    z-index: 7;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: -170px;
+    text-align: center;
+    width: 180px;
+    height: 20px;
+    background-color: #ffffff;
+    opacity: 0.55;
+    border-radius: 8px;
+    color: hsl(288, 6%, 16%);
+    font-family: 'Rubik';
+    text-align: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  margin: 0; 
+}
+
+
+
+.searchFind{
+    position: absolute;
+    color: white;
+    font-family: "Rubik";
+    font-size: 10px;
+    margin-top: -130px;
+    margin-left: 70px;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #202020;
+    border: 1.5px solid rgb(116, 116, 116);
+    padding: 10px;
+    width: 150px;
+    transition: 0.3s linear;
+}
+
+.searchFind:hover {
+    color: #ffffff;
+    background-color: #a938c5;
+}
+
+
+
+
+
+
+
+
+
+
+
+.textCaptureNew{
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 521px;
+    color: rgb(255, 255, 255);
+    font-family: "Rubik";
+    line-height: 1;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s linear;
+}
+
+
+.StartSetCapture{
+    position: absolute;
+    color: white;
+    font-family: "Rubik";
+    font-size: 10px;
+    margin-top: -40px;
+    margin-left: 550px;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #202020;
+    border: 1.5px solid rgb(116, 116, 116);
+    padding: 10px;
+    width: 100px;
+    transition: 0.3s linear;
+}
+
+.StartSetCapture:hover {
+    color: #ffffff;
+    background-color: #a938c5;
+}
+.CloseSetCapture{
+    position: absolute;
+    color: white;
+    font-family: "Rubik";
+    font-size: 10px;
+    margin-top: -40px;
+    margin-left: 750px;
+    line-height: 1;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #202020;
+    border: 1.5px solid rgb(116, 116, 116);
+    padding: 10px;
+    width: 80px;
+    transition: 0.3s linear;
+}
+
+.CloseSetCapture:hover {
+    color: #ffffff;
+    background-color: #a938c5;
+}

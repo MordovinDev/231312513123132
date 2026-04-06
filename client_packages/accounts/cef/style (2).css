@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f1a 100%);
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255, 140, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 165, 0, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.container {
+  background: linear-gradient(145deg, rgba(30, 30, 50, 0.95), rgba(20, 20, 35, 0.98));
+  padding: 50px 45px;
+  border-radius: 20px;
+  box-shadow: 
+    0 25px 60px rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgba(255, 140, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, #ff8c00, #ff6600, #ff8c00, transparent, transparent);
+  border-radius: 22px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.title .orange {
+  color: #ff8c00;
+  text-shadow: 0 0 20px rgba(255, 140, 0, 0.5);
+}
+
+.title .white {
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.container > span {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 15px;
+  display: block;
+  margin-bottom: 35px;
+  font-weight: 400;
+}
+
+.error {
+  color: #ff4757;
+  font-size: 14px;
+  margin-bottom: 10px;
+  min-height: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.inputText {
+  width: 100%;
+  padding: 16px 20px;
+  border: 2px solid rgba(255, 140, 0, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  color: #ffffff;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.inputText::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.inputText:focus {
+  border-color: #ff8c00;
+  background: rgba(255, 140, 0, 0.05);
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.15);
+}
+
+.inputText:hover {
+  border-color: rgba(255, 140, 0, 0.4);
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #ff8c00, #ff6600);
+  border: none;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  box-shadow: 0 4px 20px rgba(255, 140, 0, 0.4);
+}
+
+input[type="button"]:hover {
+  background: linear-gradient(135deg, #ff9f1a, #ff7700);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(255, 140, 0, 0.5);
+}
+
+input[type="button"]:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(255, 140, 0, 0.4);
+}
+
+.routeToRegister {
+  margin-top: 15px;
+}
+
+.switchRegister {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.switchRegister:hover {
+  color: #ff8c00;
+}
+
+.switchRegister::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #ff8c00;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.switchRegister:hover::after {
+  width: 100%;
+}
+
+/* Decorative elements */
+.container::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, rgba(255, 140, 0, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    margin: 20px;
+    padding: 40px 30px;
+  }
+  
+  .title {
+    font-size: 28px;
+  }
+}

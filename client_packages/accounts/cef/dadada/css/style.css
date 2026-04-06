@@ -1,0 +1,373 @@
+.osnova, .circle, .menu, .donate, .logo, .poloska, .play, .donatecheck, .updonate, .cash,
+.settings, .settingsss, .menus, .vip, .krug, .blackvip, .rifle, .marcsman, .mg, .korona,
+.vipmenu, .ballas, .fam, .bloods, .fbi, .mara, .vagos, .popolnit, .vip1, .vip2, .vip3, .vipt1, .vipt2, .vipt3{
+    position:absolute;
+    user-select:none;
+    background-attachment: fixed;
+}
+
+* {
+    overflow: hidden;
+}
+
+
+.osnova {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+}
+
+.logo{
+    margin-top: 23%;
+    margin-left: 35%;
+    opacity: 0.1;
+}
+
+.circle {
+    top: 50%;
+    left: 50%;
+    /* margin-top: 50%;
+    margin-left: 50%; */
+    width: 800px;
+    height: 400px;
+    /* width: 1600px;
+    height: 800px; */
+    /* background-color: rgb(66, 66, 66); */
+    background-color: #202020;
+    box-shadow:0.375em 0.375em 0 0 rgba(0, 0, 0, 0.125);
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+}
+
+.poloska {
+    margin-top: 6%;
+    margin-left: 0%;
+    width: 800px;
+    height: 3px;
+    background-color: aliceblue;
+    opacity: 0.5;
+}
+
+.play {
+    margin-left: 42%;
+    margin-top: 2.7%;
+}
+.menus {
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    margin-top: 3.7%;
+    margin-left: 52%;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: bold;
+    /* background-color: rgb(230, 203, 237); */
+    transition: 1s linear; /* Время изменения */
+}
+.menus:hover {
+    color: #ff0202; /* Цвет текста */
+    /* background: #f66d52; */
+}
+
+
+.donatecheck {
+    font-size:15px;
+    margin-left: 0.5%;
+    margin-top: -2%;
+    color: aliceblue;
+    font-family: cursive;
+}
+.updonate {
+    line-height: 1;
+    font-weight: bold;
+    font-size: 12px;
+    color:rgb(182, 182, 182);
+    font-family: cursive;
+    margin-top: 2.3%;
+    margin-left: 0.5%;
+    transition: 1s linear; /* Время изменения */
+}
+.updonate:hover {
+    color: #ff0000; /* Цвет текста */
+    /* background: #f66d52; */
+}
+.popolnit {
+    line-height: 1;
+    font-weight: bold;
+    font-size: 12px;
+    color:rgb(182, 182, 182);
+    font-family: cursive;
+    margin-top: -6.3%;
+    margin-left: 0.5%;
+    transition: 1s linear; /* Время изменения */
+}
+.popolnit:hover {
+    color: #ff0000; /* Цвет текста */
+    /* background: #f66d52; */
+}
+.cash {
+    color:rgb(182, 182, 182);
+    margin-top: 2.7%;
+    margin-left: 65.5%;
+}
+.settingsssss {
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    margin-top: 0.8%;
+    margin-left: 20%;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: bold;
+    /* background-color: rgb(230, 203, 237); */
+    transition: 1s linear; /* Время изменения */
+}
+.settingsssss:hover {
+    color: #ff0202; /* Цвет текста */
+    /* background: #f66d52; */
+}
+
+.donate {
+    margin-top: 0.8%;
+    margin-left: 70%;
+    font-family: cursive;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1;
+    transition: 1s linear; /* Время изменения */
+    font-weight: bold;
+    /* background: #ffc; Цвет фона */
+}
+.donate:hover {
+    color: #ff0202; /* Цвет текста */
+    /* background: #f66d52; */
+}
+
+
+
+
+.menu {
+    /* text-overflow: clip; */
+    /* width: 100%;
+    height: 100%; */
+    margin-top: 7%;
+    margin-left: 50%;
+    font-family: cursive;
+    color:rgb(255, 255, 255);
+    font-size:15px;
+    transform: translate(-50%, -50%);
+    animation: no 2s forwards;
+}
+@keyframes no {
+    0% {
+        color: rgb(0, 0, 0);
+        filter: blur(200px);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+        filter: blur(0px);
+    }
+  }
+.settingsss {
+    /* text-overflow: clip; */
+    /* width: 100%;
+    height: 100%; */
+    margin-top: 15%;
+    margin-left: 15%;
+    font-family: cursive;
+    color:red;
+    font-size:30px;
+    animation: da 2s forwards;
+}
+@keyframes da {
+    0% {
+        color: rgb(0, 0, 0);
+        filter: blur(200px);
+    }
+    100% {
+        color: rgb(255, 0, 0);
+        filter: blur(0px);
+    }
+}
+
+
+
+.vip {
+    transform: translate(-50%, -50%);
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    margin-top: 25%;
+    margin-left: 18.5%;
+    /* text-transform: uppercase;
+    line-height: 1;
+    font-weight: bold; */
+    /* background-color: rgb(230, 203, 237); */
+    transition: 1s linear; /* Время изменения */
+}
+.vip:hover {
+    color: #ff0202; /* Цвет текста */
+    /* background: #f66d52; */
+}
+
+.blackvip {
+    transform: translate(-50%, -50%);
+    margin-top: 19%;
+    margin-left: 18.8%;
+    opacity: 0.3;
+}
+
+
+.rifle {
+    z-index: auto;
+    margin-top: 17%;
+    margin-left: 13%;
+    transform: rotate(-65deg);
+}
+
+.marcsman {
+    z-index: auto;
+    margin-top: 11.5%;
+    margin-left: 16%;
+    transform: rotate(-70deg);
+}
+
+.mg {
+    z-index: auto;
+    margin-top: 10.3%;
+    margin-left: 4%;
+    transform: rotate(70deg);
+}
+
+.korona {
+    z-index: auto;
+    margin-top: 2.1%;
+    margin-left: 7%;
+    transform: rotate(20deg);
+}
+
+.vipmenu {
+    transform: translate(-50%, -50%);
+    margin-top: 3%;
+    margin-left: 50%;
+    font-family: cursive;
+    color: #ffffff;
+}
+.vipt1 {
+    transform: translate(-50%, -50%);
+    margin-top: 3%;
+    margin-left: 50%;
+    font-family: cursive;
+    color: #ffffff;
+}
+.vipt2 {
+    transform: translate(-50%, -50%);
+    margin-top: 3%;
+    margin-left: 50%;
+    font-family: cursive;
+    color: #ffffff;
+}
+.vipt3 {
+    transform: translate(-50%, -50%);
+    margin-top: 3%;
+    margin-left: 50%;
+    font-family: cursive;
+    color: #ffffff;
+}
+.vip1 {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 18.5%;
+}
+.vip2 {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.vip3 {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 81.5%;
+}
+
+
+
+.ballas {
+    margin-top: 2%;
+    margin-left: 5%;
+    border-radius: 10%;
+    box-shadow:0.375em 0.375em 0 0 rgba(230, 0, 255, 0.125);
+}
+.fam {
+    margin-top: 2%;
+    margin-left: 37%;
+    border-radius: 10%;
+    box-shadow:0.375em 0.375em 0 0 rgba(30, 255, 0, 0.125);
+}
+.bloods {
+    margin-top: 2%;
+    margin-left: 68%;
+    border-radius: 10%;
+    box-shadow:0.375em 0.375em 0 0 rgba(255, 0, 0, 0.125);
+}
+.vagos {
+    margin-top: 23%;
+    margin-left: 5%;
+    border-radius: 10%;
+    box-shadow:0.375em 0.375em 0 0 rgba(234, 255, 0, 0.125);
+}
+.mara {
+    margin-top: 23%;
+    margin-left: 37%;
+    border-radius: 10%;
+    box-shadow:0.375em 0.375em 0 0 rgba(60, 0, 255, 0.125);
+}
+.fbi {
+    margin-top: 23%;
+    margin-left: 68%;
+    border-radius: 10%;
+    box-shadow:0.375em 0.375em 0 0 rgba(0, 0, 0, 0.125);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.krug {
+    opacity: 0.5;
+}
